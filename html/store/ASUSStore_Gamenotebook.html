@@ -1,0 +1,1514 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>ASUS华硕商城_游戏笔记本</title>
+		<link rel="shortcut icon" type="image/x-icon" href="title1.png" />
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			a {
+				text-decoration: none;
+			}
+			
+			#top_1 {
+				background-color: black;
+				width: 100%;
+				height: 30px;
+			}
+			
+			#top_1_1 {
+				height: 30px;
+				width: 320px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				color: white;
+				position: absolute;
+				top: 0px;
+				left: 30px;
+			}
+			
+			#top_1_2 {
+				width: 110px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				position: absolute;
+				top: 0px;
+				left: 300px;
+			}
+			
+			#top_1_2 a {
+				color: white;
+			}
+			
+			#top_1_2 a:hover {
+				color: gainsboro;
+			}
+			
+			#top_1_3 {
+				width: 180px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				position: absolute;
+				top: 0px;
+				left: 1130px;
+			}
+			
+			#top_1_3 a {
+				color: white;
+			}
+			
+			#top_1_3 a:hover {
+				color: gainsboro;
+			}
+			
+			#top_2 {
+				height: 120px;
+				width: 100%;
+			}
+			
+			#top_2_1 {
+				height: 50px;
+				width: 200px;
+				position: absolute;
+				top: 70px;
+				left: 70px;
+			}
+			
+			#top_2_2 {
+				height: 40px;
+				width: 400px;
+				position: absolute;
+				top: 80px;
+				left: 840px;
+				border: 1px gainsboro solid;
+				text-align: center;
+			}
+			
+			#top_2_2:hover {
+				border: 1px grey solid;
+			}
+			
+			#top_2_3 {
+				/*background-color: coral;
+				height: 40px;
+				width: 50px;*/
+				position: absolute;
+				top: 81px;
+				left: 1245px;
+			}
+			
+			#top_2_4 {
+				height: 30px;
+				width: 370px;
+				position: absolute;
+				top: 125px;
+				left: 840px;
+				font-size: 13px;
+			}
+			
+			#top_3 {
+				background-color: coral;
+				height: 40px;
+				width: 100%;
+			}
+			
+			#top_3_1_1 {
+				background-color: orange;
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 60px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+				
+			}
+			#top_3_1_1:hover+div{
+				display: block;
+			}
+			#top_3_1_2:hover{
+				display: block;
+			}
+			
+			#top_3_1_2 {
+				border: 1px gainsboro solid;
+				background-color: rgb(249,249,249);
+				border-top: none;
+				height: 352px;
+				width: 180px;
+				position: absolute;
+				
+				top: 190px;
+				left: 60px;
+				z-index: 1;
+				display: none;
+			}
+			
+			#top_3_1_2 li {
+				list-style-type: none;
+				height: 50px;
+				width: 160px;
+				line-height: 50px;
+				padding-left: 20px;
+				color: grey;
+				font-size: 14px;
+				font-family: "宋体";
+			}
+			
+			#top_3_1_2 ol>li:hover {
+				/*针对top_3_1_2所有的后代li边框的显示*/
+				border: 2px orange solid;
+				border-right: none;
+				color: black;
+			}
+			
+			#top_3_1_2 li:hover div {
+				/*当鼠标悬浮li时，li中的div显示出来*/
+				display: block;
+			}
+			
+			#top_3_1_2_div1 {
+				/*第一个li笔记本电脑所显示出的边框*/
+				background-color: white;
+				height: 320px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 0px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div1 ol li {
+				/*设置第一个li笔记本电脑所显示出的边框中的li的字体大小和边框格式*/
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div2 {
+				/*第二个li整机产品所显示出的边框*/
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 50px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div2 ol li {
+				/*设置第二个li所显示出的边框中的li的字体大小和边框格式*/
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div3 {
+				background-color: white;
+				height: 160px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 100px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div3 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div4 {
+				background-color: white;
+				height: 320px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 150px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div4 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div5 {
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 200px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div5 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div6 {
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 250px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div6 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div7 {
+				background-color: white;
+				height: 220px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 300px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div7 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_2 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 260px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_2:hover {
+				background-color: orange;
+			}
+			#top_3_2 a{
+				color: white;
+				text-decoration: none;
+			}
+			#top_3_2 a:visited{
+				color: white;
+				text-decoration: none;
+			}
+			
+			#top_3_3 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 440px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_3:hover {
+				background-color: orange;
+			}
+			
+			#top_3_4 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 620px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_4:hover {
+				background-color: orange;
+			}
+			
+			#top_3_5 {
+				height: 40px;
+				width: 120px;
+				position: absolute;
+				top: 150px;
+				left: 800px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_5:hover {
+				background-color: orange;
+			}
+			
+			#top_3_6 {
+				height: 40px;
+				width: 120px;
+				position: absolute;
+				top: 150px;
+				left: 910px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_6:hover {
+				background-color: orange;
+			}
+			
+			#top_3_7_1 {
+				height: 40px;
+				width: 240px;
+				position: absolute;
+				top: 150px;
+				left: 1040px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+				font-size: 13px;
+			}
+			
+			#top_3_7_1:hover {
+				background-color: orange;
+			}
+			
+			#top_3_7_2 {
+				background-color: white;
+				height: 90px;
+				width: 240px;
+				border: 1px orange solid;
+				border-top: none;
+				position: absolute;
+				top: 190px;
+				left: 1040px;
+				line-height: 90px;
+				text-align: center;
+				font-size: 13px;
+				display: none;
+			}
+			
+			#top_3_7_1:hover+div {
+				display: block;
+			}
+			
+			/*您的当前位置*/
+			#b_div{				
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 100%;
+				height: 55px;
+				top: 190px;		
+				z-index: -1;	
+			}
+			
+			#b_div_1{
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 350px;
+				height: 20px;
+				top: 15px;
+				left: 65px;
+				font-size: 9px;				
+			}
+			
+			/*商品筛选*/
+			#main_div{/*商品筛选的框架*/
+				/*background-color: burlywood;*/
+				position: absolute;
+				width: 100%;
+				height: 1000px;
+				top: 250px;
+			}
+			#main_div1{/*商品筛选（共8件商品）*/
+				/*border: 1px rgb(225,225,225) solid;*/
+				position: absolute;
+				width: 90%;
+				height: 190px;
+				left: 60px;			
+			}
+			
+			#main_div1_1{
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+				background-color: rgb(220,220,220);
+			}
+			
+			#main_div1_1_1{
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 10px;			
+			}
+			
+			#main_div1_2{/*您已选择*/
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				top: 30px;
+				background-color: rgb(243,243,243);
+			}
+			#main_div1_2_1{
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 30px;
+				
+			}
+					
+			#main_div1_3{
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				top: 60px;
+				
+			}
+			#main_div1_3_1{
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 65px;
+			}
+			#main_div1_4{
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				top: 90px;
+			}
+			#main_div1_4_1{/*CPU*/
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 65px;
+			}
+			#main_div1_5{
+				/*border: 1px rgb(225,225,225) solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				top: 120px;
+			}
+			#main_div1_5_1{/*操作系统*/
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 65px;
+			}
+	
+			#main_div1_6{
+				/*border: 1px green solid;*/
+				position: absolute;
+				width: 100%;
+				height: 30px;
+				top: 150px;
+			}
+			
+			#main_div1_6_1{/*显示屏*/
+				/*border: 1px greenyellow solid;*/
+				position: absolute;
+				height: 30px;
+				line-height: 30px;
+				left: 33px;
+			}
+			
+			/*默认、价格、销量。。。。*/
+			#main_div2{
+				background-color: rgb(243,243,243);
+				position: absolute;
+				width: 90%;
+				height: 30px;
+				left: 60px;	
+				top: 200px;
+			}
+		
+			/*笔记本展示区*/
+			#main_div3{ /*笔记本图片展示的大框架*/
+				position: absolute;
+				width: 90%;		
+				height: 865px;
+				left: 60px;
+				top: 255px;		
+				/*border: 1px black solid;*/				
+				background-color: rgb(249,249,249);
+			}
+			
+			#main_div3_1{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				
+			}
+			#main_div3_1_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			
+			#main_div3_1_1 img{
+				width: 240px;
+			}
+			
+			#main_div3_1_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;				
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			
+			#main_div3_1_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_1_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+		
+			/*3*/
+			#main_div3_2{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 300px;
+			}
+			#main_div3_2_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_2_1 img{
+				width: 240px;
+			}
+			#main_div3_2_2{
+				position: absolute;
+			/*	border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_2_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_2_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+			
+			/**/
+			#main_div3_3{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 600px;
+			}
+			#main_div3_3_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_3_1 img{
+				width: 240px;
+			}
+			#main_div3_3_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_3_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_3_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+					
+			#main_div3_4{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 900px;
+			}
+			#main_div3_4_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_4_1 img{
+				width: 240px;
+			}
+			#main_div3_4_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_4_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_4_3 img{
+				position: absolute;			
+				width: 240px;				
+			}		
+			
+			/*第五台电脑*/
+			#main_div3_5{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 0px;
+				top: 435px;
+			}
+			#main_div3_5_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_5_1 img{
+				width: 240px;
+			}
+			#main_div3_5_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_5_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_5_3 img{
+				position: absolute;			
+				width: 240px;				
+			}	
+			
+			/*第六台电脑*/
+			#main_div3_6{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 300px;
+				top: 435px;
+			}
+			#main_div3_6_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_6_1 img{
+				width: 240px;
+			}
+			#main_div3_6_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_6_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_6_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+			
+			/*第七台电脑*/
+			#main_div3_7{
+				/*border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 600px;
+				top: 435px;
+			}
+			#main_div3_7_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_7_1 img{
+				width: 240px;
+			}
+			#main_div3_7_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_7_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_7_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+			
+			/*第八台电脑*/
+			#main_div3_8{
+			/*	border: 1px red solid;*/
+				position: absolute;
+				width: 300px;
+				height: 435px;
+				left: 900px;
+				top: 435px;
+			}
+			#main_div3_8_1{
+				position: absolute;
+				/*border: 1px black solid;*/
+				position: absolute;
+				width: 240px;
+				height: 240px;
+				left: 30px;
+			}
+			#main_div3_8_1 img{
+				width: 240px;
+			}
+			#main_div3_8_2{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				font-size: 9px;
+				text-align: center;
+				left: 30px;
+				top: 240px;
+			}
+			#main_div3_8_3{
+				position: absolute;
+				/*border: 1px black solid;*/
+				width: 240px;
+				height: 95px;
+				top: 330px;
+				left: 30px;
+			}
+			#main_div3_8_3 img{
+				position: absolute;			
+				width: 240px;				
+			}
+			
+			/*公司介绍、购物指南、配送与付款、售后服务、服务与支持*/
+			
+			#top_20{
+				/*background-color: red;*/
+				height: 350px;
+				width: 1200px;
+				position: absolute;
+				top: 1350px;
+				left: 80px;	
+				
+			}
+			
+			#top_20_1{
+				/*background-color:orange ;*/
+				height: 40px;
+				width: 1200px;
+				position: relative;
+				top: 30px;
+				left: -80px;
+				line-height:40px;
+				text-align: center;
+				
+			}
+			
+			#top_20_1 ol li {
+				list-style-type: none;
+				float: left;
+				height: 80px;
+				width: 230px;
+				
+				
+			}
+			
+			#top_20_2{
+				/*background: blue;*/
+				height: 160px;
+				width: 80px;
+				position: absolute;
+				top:100px;
+				left:0px;
+			}
+			#top_20_2 ol{
+				/*background: red;*/
+				height: 160px;
+			}
+			
+			#top_20_2 ol li {
+				list-style-type:none;
+				font-size:12px;
+				height:30px;	
+			}
+			
+			#top_20_3{
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top:100px;
+				left: 230px;
+		
+			}
+			
+			#top_20_3 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height:30px ;	
+			}
+				
+			#top_20_4{
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top:100px;
+				left:450px;
+		
+			}
+			
+			#top_20_4 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height:30px ;	
+			}
+			
+			#top_20_5{
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top:100px;
+				left: 690px;
+		
+			}
+			
+			#top_20_5 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height:30px ;	
+			}
+			
+			#top_20_6{
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top:100px;
+				left: 910px;
+			}
+			
+			#top_20_6 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height:30px ;	
+			}
+			/*bottom*/	
+					
+			#bottom{	
+				/*border: 1px darkblue solid;	*/		
+				height: 135px;
+				width:100%;
+				position: absolute;
+				background-color: rgb(99,99,99);
+				top: 1700px;
+				
+			}
+			
+			#bottom-font{
+				/*border: 1px blue solid;*/
+				position: absolute;
+				width: 1100px;
+				height: 100px;
+				top: 30px;
+				left: 100px;
+				text-align: center;
+				font-size: 10px;
+				line-height: 25px;
+				color: rgb(204,204,204);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--欢迎、登陆、注册、会员中心、购物指南-->
+		<div id="top_1">
+			<div id="top_1_1">
+				<span>
+					尊敬的顾客您好，欢迎来到ASUS华硕商城！
+					</span>
+			</div>
+			<div id="top_1_2">
+
+				<a href="../login/Shop_login.html">登陆</a>
+				<span style="color:gainsboro;">&nbsp;|&nbsp;</span>
+				<a href="../register/Shop_register.html">注册</a>
+
+			</div>
+			<div id="top_1_3">
+
+				<a href="../vip/会员.html">会员中心</a>&nbsp;
+
+				<a href="#">购物指南</a>
+
+			</div>
+
+		</div>
+
+		<div id="top_2">
+			<div id="top_2_1">
+				<a href="hssc.html">
+					<img src="../../img/2-left.jpg" />
+				</a>
+				
+			</div>
+			<div id="top_2_2">
+				<input style="height:38px;width:400px;color:black" />
+			</div>
+			<div id="top_2_3"><img src="../../img/sousuo.png" /></div>
+			<div id="top_2_4">
+				重要公告：
+				<a href="#" style="color: black;">※8/2前订单＆退换货联系客服</a>
+				<a href="#" style="color:  black;">※旧会员登入流程</a>
+			</div>
+
+		</div>
+
+		<div id="top_3">
+			<div id="top_3_1">
+				<div id="top_3_1_1">所有商品分类</div>
+				<div id="top_3_1_2">
+					<ol>
+						<li>笔记本电脑
+							<div id="top_3_1_2_div1">
+								<ol>
+									<li>
+										<a href="ASUS Store-玩家国度笔记本-ROG系列.html" style="color: black"><b>玩家国度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="ASUS Store-玩家国度笔记本-ROG系列.html">ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>翻转变形系列&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">T/TP系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>灵耀轻薄ZenBook&nbsp;&nbsp;</b></a>
+										<a href="#">U系列 &nbsp;&nbsp;UX系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>商用笔记本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">P/PU系列 &nbsp;&nbsp;B/BU系列 &nbsp;&nbsp;PRO系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>游戏笔记本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">顽石系列-FL系列&nbsp;&nbsp;飞行堡垒-FX/ZX系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>办公娱乐本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">效能先锋-A/K/X系列&nbsp;&nbsp; 学生助手-E系列&nbsp;&nbsp; 大屏影音-N/V系列</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>整机商品
+							<div id="top_3_1_2_div2">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>一体机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">傲世一体机-ZenAiO系列 &nbsp;&nbsp;Vivo一体机-V系列 &nbsp;&nbsp;如意一体机-ET系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>台式机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">游戏主机-G系列 &nbsp;&nbsp;家用系列-M/K系列 &nbsp;&nbsp;玩家国度-ROG系列&nbsp;&nbsp; 商用系列B/P系列</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>手机/平板/数码
+							<div id="top_3_1_2_div3">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>智能手机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ZenFone系列 &nbsp;&nbsp;ZenFone飞马系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>平板电脑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>智能设备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">智能手表</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>DIY外设
+							<div id="top_3_1_2_div4">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>主板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ROG玩家国度 &nbsp;&nbsp;电竞系列PRO GAMING &nbsp;&nbsp;特种部队TUF&nbsp;&nbsp;大师系列 &nbsp;&nbsp;家用系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>显卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">猛禽系列&nbsp;&nbsp;ROG玩家国度&nbsp;&nbsp;公版系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>声卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">外置声卡</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>显示器&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">主流家用&nbsp;&nbsp;电竞游戏&nbsp;&nbsp;专业设计&nbsp;&nbsp;健康爱眼 &nbsp;&nbsp;时尚轻薄&nbsp;&nbsp;玩家国度ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>光驱/刻录机&nbsp;&nbsp;</b></a>
+										<a href="#">外置纤薄DVD/刻录机&nbsp;&nbsp; 蓝光系列光驱&nbsp;&nbsp;内置DVD/刻录机</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>行车记录仪&nbsp;&nbsp;</b></a>
+										<a href="#">行车记录仪&nbsp;&nbsp;运动摄像机</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>网络产品
+							<div id="top_3_1_2_div5">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>路由器&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>无线网卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>办公设备
+							<div id="top_3_1_2_div6">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>投影仪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>MiniPC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>周边配件
+							<div id="top_3_1_2_div7">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>键盘/鼠标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">键盘 &nbsp;&nbsp;鼠标&nbsp;&nbsp; 键鼠套装&nbsp;&nbsp;鼠标垫 &nbsp;&nbsp;玩家国度ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>笔记本配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ROG玩家国度系列</a>
+									</li>
+									<li>
+
+										<a href="#" style="color: black"><b>手机配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+
+										<a href="#" style="color: black"><b>平板配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<a href="ASUS华硕商城_游戏笔记本.html">
+				<div id="top_3_2">游戏本暑促送背包</div>
+			</a>
+			
+			<div id="top_3_3">办公上网本送包鼠</div>
+			<div id="top_3_4">晒单送笔记本3年延保</div>
+			<div id="top_3_5">夜市直降</div>
+			<div id="top_3_6">以旧换新</div>
+			<div id="top_3_7">
+				<a href="../cart/购物车_ASUS华硕商城.html">
+					<div id="top_3_7_1">购物车中有&nbsp;<b>1</b>&nbsp;种商品</div>
+				</a>
+				
+				<div id="top_3_7_2">加载中...</div>
+			</div>
+		</div>
+		
+		<!--您的当前位置-->
+		
+		<div id="b_div">
+			<div id="b_div_1">
+				<a>您当前的位置：</a>
+				<a href="../store/hssc.html">首页</a>
+				<a>&gt;&gt;</a>
+				<a>笔记本电脑</a>
+				<a>&gt;&gt;</a>
+				<a>游戏笔记本</a>
+						
+			</div>		
+		</div>
+		<!--main-商品筛选 (共9件商品)-->
+		<div id="main_div">
+			<!--商品筛选 (共9件商品)-->
+			<div id="main_div1">
+				<div id="main_div1_1">
+					<div id="main_div1_1_1">
+						<a><b>商品筛选</b>(共<a style="color: red;">8</a>件商品)</a>
+					</div>					
+				</div>				
+				<div id="main_div1_2">
+					<div id="main_div1_2_1">
+						<a>您已选择：</a>
+					</div>				
+				</div>
+				
+				<div id="main_div1_3">
+					<div id="main_div1_3_1">
+						<a>分类：顽石系列-FL系列 飞行堡垒-FX/ZX系列</a>
+					</div>
+				</div>
+				
+				<div id="main_div1_4">
+					<div id="main_div1_4_1">
+						<a>价格：不限 1-2999元 3000-5999元 6000-7999元 8000-9999元 10000-29999元   1-2999</a>
+					</div>
+				</div>
+				<div id="main_div1_5">
+					<div id="main_div1_5_1">
+						<a>CPU：不限 英特尔 酷睿 英特尔 赛扬 AMD</a>
+					</div>
+				</div>
+				
+				<div id="main_div1_6">
+					<div id="main_div1_6_1">
+						<a>操作系统：Windows 10 Home Windows 8.1</a>
+					</div>
+				</div>
+			</div>
+			
+			<!--默认、价格、销量。。。。-->
+			<div id="main_div2">
+				
+			</div>
+			
+			<!--笔记本展示区-->
+			<div id="main_div3">
+				<div id="main_div3_1">
+					<div id="main_div3_1_1">
+						<a href="#" target="_blank"><img src="../../img_2/a00001.jpg" />
+					</a>
+					</div>
+					<div id="main_div3_1_2">
+						<a>FX50JK-飞行堡垒游戏笔记本（ Windows 8.1 /i7 4710HQ /4G/1T）-黑色</a><br />
+						<a style="color: red;">￥6099.00</a><br />
+						<a style="color: darkgrey;"><s>￥6099.00</s></a> 
+					</div>
+					<div id="main_div3_1_3">
+						<a href="#" target="_blank"><img src="../../img/5l5m2f5.jpg" />
+					</a>
+					</div>
+				</div>
+				<div id="main_div3_2">
+					<div id="main_div3_2_1">
+						<img src="../../img_2/a00002.jpg" />
+					</div>
+					<div id="main_div3_2_2">
+						<a>ZX70VW-飞行堡垒游戏本( Windows 10 Home/i7 6700HQ/16GB/1TB+128GB）-金属灰</a><br />
+						<a style="color: red;">￥7999.00</a><br />
+						<a style="color: darkgrey;"><s>￥8299.00</s></a>
+					</div>
+					<div id="main_div3_2_3">
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				<div id="main_div3_3">
+					<div id="main_div3_3_1">
+						<img src="../../img_2/a00003.jpg" />
+					</div>
+					<div id="main_div3_3_2">
+						<a>FX-PLUS-飞行堡垒游戏笔记本（Windows 10 Home/i7 4720HQ/8G/1T）-黑色</a><br />
+						<a style="color: red;">￥7899.00</a><br />
+						<a style="color: darkgrey;"><s>￥7899.00</s></a>
+					</div>
+					<div id="main_div3_3_3">
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				<div id="main_div3_4">
+					<div id="main_div3_4_1">
+						<img src="../../img_2/a00004.jpg"/>
+					</div>
+					<div id="main_div3_4_2">
+						<a>FX-PLUS-飞行堡垒游戏笔记本（Windows 8.1/i5 4200H/8G/1T）-黑色</a><br />
+						<a style="color: red;">￥5999.00</a><br />
+						<a style="color: darkgrey;"><s>￥6299.00</s></a>
+					</div>
+					<div id="main_div3_4_3">	
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				<!--新增第五台笔记本【待处理】-->
+				<div id="main_div3_5">
+					<div id="main_div3_5_1">
+						<img src="../../img_2/a00005.jpg"/>
+					</div>
+					<div id="main_div3_5_2">
+						<a>ZX50VW-坦克世界游戏笔记本-黑色</a><br />
+						<a style="color: red;">￥5299.00</a><br />
+						<a style="color: darkgrey;"><s>￥55999.00</s></a>
+					</div>
+					<div id="main_div3_5_3">	
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				
+				<div id="main_div3_6">
+					<div id="main_div3_6_1">
+						<img src="../../img_2/a00006.jpg"/>
+					</div>
+					<div id="main_div3_6_2">
+						<a>FX-PRO-飞行堡垒游戏本(Windows 10 Home/i7-6700HQ/8G)-黑色</a><br />
+						<a style="color: red;">￥7699.00</a><br />
+						<a style="color: darkgrey;"><s>￥7999.00</s></a>
+					</div>
+					<div id="main_div3_6_3">	
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				
+				<div id="main_div3_7">
+					<div id="main_div3_7_1">
+						<img src="../../img_2/a00007.jpg"/>
+					</div>
+					<div id="main_div3_7_2">
+						<a>FX-PRO-飞行堡垒游戏本(Windows 10 Home/i5-6300HQ)-黑色</a><br />
+						<a style="color: red;">￥6299.00</a><br />
+						<a style="color: darkgrey;"><s>￥6599.00</s></a>
+					</div>
+					<div id="main_div3_7_3">	
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+				
+				<div id="main_div3_8">
+					<div id="main_div3_8_1">
+						<img src="../../img_2/a00008.jpg"/>
+					</div>
+					<div id="main_div3_8_2">
+						<a>FX50VX-飞行堡垒游戏本（ Windows 10 Home/ i7-6700HQ)-黑色</a><br />
+						<a style="color: red;">￥6499.00</a><br />
+						<a style="color: darkgrey;"><s>￥6799.00</s></a>
+					</div>
+					<div id="main_div3_8_3">	
+						<img src="../../img/5l5m2f5.jpg" />
+					</div>
+				</div>
+			
+			</div>	
+		</div>	
+		<!--网页底部-->
+		<div id="top_20">
+			<div id="top_20_1">
+				<ol>
+					<li><b>公司介绍</b></li>
+					<li><b>购物指南</b></li>
+					<li><b>配送与付款</b></li>
+					<li><b>售后服务</b></li>
+					<li><b>服务与支持</b></li>
+				</ol>
+			</div>
+			<div id="top_20_2">
+				<ol>
+					<li><a href="#" style="text-decoration:none; color:orange">关于华硕 </a></li>
+					<li><a href="#" style="text-decoration:none; color:orange">华硕承诺</a></li>
+					<li><a href="#" style="text-decoration:none; color:orange">交易条款</a></li>
+					<li><a href="#" style="text-decoration:none; color:orange">特别提醒</a></li>	
+				</ol>
+			</div>			
+			<div id="top_20_3">
+				<ol>
+					<li><a href="#" style="text-decoration: none; color: orange;">订单说明 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">会员注册</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">会员账户安全与信息</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">购物流程</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">积分使用说明 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">优惠券使用说明</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">常见问题</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">华硕商城服务协议说明</a></li>
+				</ol>
+			</div>		
+			<div id="top_20_4">
+				<ol>
+					<li><a href="#" style="text-decoration: none; color: orange;">发货与签收规范 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">配送运费说明</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">配送常见问题</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">配送异常</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">付款咨询 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">发票说明</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">发票常见问题</a></li>
+				</ol>
+			</div>
+			<div id="top_20_5">
+				<ol>
+					<li><a href="#" style="text-decoration: none; color: orange;">	退换货申请 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">维修申请</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">售后产品返回和退款说明</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">增值服务</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">如何找到产品序列号 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">联系我们</a></li>					
+				</ol>
+			</div>
+			
+			<div id="top_20_6">
+				<ol>
+					<li><a href="#" style="text-decoration: none; color: orange;">华硕服务中心查询 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">华硕授权实体门店查询</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">华硕体验店</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">ZenCare</a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;">ZenTalk硕粉俱乐部 </a></li>
+					<li><a href="#" style="text-decoration: none; color: orange;;">Giftbox</a></li>					
+				</ol>
+			</div>
+		</div>		
+			
+		<!--bottom-->
+		<div id="bottom">
+			<div id="bottom-font">				
+				本商店顾客个人信息将不会被泄漏给其他任何机构和个人<br />
+				 本商店logo和图片都已经申请保护，未经授权不得使用<br />
+				有任何购物问题请联系商城客服 | 电话：400-091-9520 | 工作时间：周一~周日 9:00－18:00<br />
+				 沪ICP备11025349号-3 │ ASUSTeK Computer Inc. All rights reserved.<br />		
+			</div>			
+		</div>					
+	</body>
+</html>
+
+</html>

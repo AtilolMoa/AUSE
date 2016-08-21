@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="keywords" content="华硕，笔记本，手机，ASUS,显卡"><!--关键字-->
+	<title>ASUS</title><!--网页导航栏-->
+	<link rel="shortcut icon" type="image/x-icon" href="title1.png" />
+	
+	<!--网页总体样式-->
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		/*整个网页div样式*/
+		#div{
+			font-family: "微软雅黑";
+		}
+		
+	
+	
+	
+	/*<!--网页中间段样式-->*/
+	
+		#div-middle-1st{
+			width: 1366px;
+			background-color: black;
+			
+		}
+		
+	
+	
+	/*<!--页眉布局-->*/
+	
+			#top{
+				height: 60px;
+				width:1366px;
+			}
+			#div-top{
+				height: 60px;
+				width:1366px;
+			}
+			#top_left ol li{
+				list-style-type: none;
+				position: absolute;
+				left: 25px;
+				top: 12px;
+				background-color:rgb(204,204,204) ;
+				z-index: 5;
+			}
+			#top_among{
+				position: absolute;
+				width: 1366px;
+				height: 60px;
+				top: 0px;
+				z-index: 3;
+				background-color:rgb(204,204,204) ;
+				line-height: 60px;
+			}
+			#top_among_01{
+				
+				color: black;
+				font-size: 18px;
+				position: absolute;
+				left: 200px;
+				width: 120px;
+			}
+			#top_among_02{
+				color: black;
+				font-size: 18px;
+				position: absolute;
+				left: 350px;
+				width: 80px;
+			}
+			#top_among_03{
+				color: black;
+				font-size: 18px;
+				position: absolute;
+				left:460px;
+				width: 80px;
+			}
+			#top_among_04{
+				
+				color: black;
+				font-size: 18px;
+				position: absolute;
+				left: 570px;
+				width: 80px;
+			}
+			#top_among_05{
+				
+				color: black;
+				font-size: 18px;
+				position: absolute;
+				left:680px;
+				width: 80px;
+			}
+			/*顶部鼠标悬浮下拉列表--个人及家用产品*/
+			#top_among_01_02{
+				margin: 0px;
+				font-size: 14px;
+				height: 420px;
+				width: 200px;
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				background-color: white;
+				color: #000000;
+				display: none;
+				padding: 10px;
+				border: 1px gray solid;
+			}
+			#top_among_01_02 ol li{
+				
+				height: 30px;
+				line-height: 30px;
+				list-style-type: none;
+			}
+			#top_among_01:hover #top_among_01_02{
+				display: block;
+			}
+			/*个人及家用产品内部列表*/
+			/*顶部鼠标悬浮列表中的悬浮列表--公共部分*/
+			#top_among_01_02 img{
+				position: absolute;
+				top: 60px;
+				left: 300px;
+				
+			}
+			#top_among_01_02 li a:hover{
+				
+				color: #00B7FF;
+			}
+			#top_among_01_02 li:hover div{
+				display: block;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--智能手机*/
+			#top_among_01_02_01{
+				
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_01 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_01 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--笔记本电脑及变形本*/
+			#top_among_01_02_02{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_02 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_02 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--平板电脑*/
+			#top_among_01_02_03{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_03 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_03 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--主板*/
+			#top_among_01_02_04{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_04 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_04 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--显卡*/
+			#top_among_01_02_05{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_05 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_05 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--智能佩戴*/
+			#top_among_01_02_06{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_06 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_06 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--台式电脑及一体电脑*/
+			#top_among_01_02_07{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_07 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_07 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--液晶显示器*/
+			#top_among_01_02_08{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_08 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_08 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--网络产品*/
+			#top_among_01_02_09{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_09 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_09 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--多媒体产品*/
+			#top_among_01_02_10{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_10 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_10 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--车载产品*/
+			#top_among_01_02_11{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_11 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_11 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			
+			/*顶部鼠标悬浮列表中的悬浮列表--周边配件*/
+			#top_among_01_02_12{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_12 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_12 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*顶部鼠标悬浮列表中的悬浮列表--游戏设备*/
+			#top_among_01_02_13{
+				margin: 0px;
+				background-color: white;
+				height: 380px;
+				width: 600px;
+				position: absolute;
+				left: 200px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 30px;
+			}
+			#top_among_01_02_13 li{
+				list-style-type:none ;
+				color: #000000;
+				height: 30px;
+				width: 300px;
+			}
+			#top_among_01_02_13 li a{
+				height: 30px;
+				width: 300px;
+				text-decoration: none;
+				color: grey;
+			}
+			
+			/*顶部鼠标悬浮下拉列表--热门活动*/
+			#top_among_02_02{
+				height: 480px;
+				left: 150;
+				width: 780px;
+				background-color: white;
+				display: none;
+				
+			}
+			#top_among_02_02 li{
+				list-style-type: none;
+				float: left;
+			}
+			#top_among_02:hover div{
+				display: block;
+			}
+			/*顶部鼠标悬浮下拉列表--商用产品*/
+			#top_among_03_02{
+				border: 1px gray solid;
+				height: 180px;
+				width: 150px;
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				background-color: white;
+				display: none;
+				padding: 30px;
+				
+			}
+			#top_among_03_02 li{
+				list-style-type: none;
+				font-size: 14px;
+				height: 30px;
+				line-height: 30px;
+				color: #000000;
+				
+			}
+			#top_among_03:hover #top_among_03_02{
+				display: block;
+			}
+			/*商用产品--产品*/
+			#top_among_03_02 li a:hover{
+				
+				color: #00B7FF;
+			}
+			#top_among_03_02 li:hover div{
+				display: block;
+			}
+			#top_among_03_02_01{
+				margin: 0px;
+				background-color: white;
+				height: 200px;
+				width: 150px;
+				position: absolute;
+				left: 150px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 20px;
+			}
+			#top_among_03_02_01 li a{
+				
+				height: 30px;
+				width: 150px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*商用产品--企业规模*/
+			#top_among_03_02_02{
+				margin: 0px;
+				background-color: white;
+				height: 200px;
+				width: 150px;
+				position: absolute;
+				left: 150px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 20px;
+			}
+			#top_among_03_02_02 li a{
+				
+				height: 30px;
+				width: 150px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*商用产品--解决方案*/
+			#top_among_03_02_03{
+				margin: 0px;
+				background-color: white;
+				height: 200px;
+				width: 150px;
+				position: absolute;
+				left: 150px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 20px;
+			}
+			#top_among_03_02_03 li a{
+				
+				height: 30px;
+				width: 150px;
+				text-decoration: none;
+				color: grey;
+			}
+			/*商用产品--行业应用*/
+			#top_among_03_02_04{
+				margin: 0px;
+				background-color: white;
+				height: 200px;
+				width: 150px;
+				position: absolute;
+				left: 150px;
+				top: -1px;
+				border: 1px gray solid;
+				display: none;
+				padding: 20px;
+			}
+			#top_among_03_02_04 li a{
+				
+				height: 30px;
+				width: 150px;
+				text-decoration: none;
+				color: grey;
+			}
+			
+			/*顶部鼠标悬浮下拉列表--服务与支持*/
+			#top_among_04_02{
+				height: 120px;
+				width: 150px;
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				background-color: white;
+				display: none;
+				padding: 10px;
+			}
+			#top_among_04_02 li{
+				list-style-type: none;
+				font-size: 14px;
+				height: 30px;
+				line-height: 30px;
+			}
+			#top_among_04_02 li a{
+				
+				text-decoration:none ;
+				color: black;
+			}
+			#top_among_04:hover div{
+				display: block;
+			}
+			
+			/*页脚头部搜索框及登录*/
+			#top_right{
+				
+				list-style-type: none;
+				position: absolute;
+				
+				top:0px;
+				left: 1000px;
+				float:left;
+				width: 300px;
+				height: 60px;
+				line-height: 60px;
+				z-index:3;
+				background-color:rgb(204,204,204) ;
+				font-size: 12px;
+				
+			}
+			#top_right a{
+				text-decoration: none;
+			}
+			
+	
+	
+	
+	/*<!--底部网站地图样式-->*/
+	
+		/*底部网站地图外框div样式*/
+		#div-bottom{
+			/*border: 1px black solid;*/
+			height: 320px;
+			width: 1366px;
+			background-color: rgb(235,235,235);
+		}
+		#div-bottom div ul li{
+			list-style-type: none;
+			font-size: 12px;
+		}
+
+
+
+		/*设置地图超链接颜色、下划线、点击的class*/
+		#div-bottom a{
+			color:  rgb(124,124,124);
+			line-height: 22px;
+			text-decoration: none;
+		}
+		#div-bottom a:hover{
+			color: black;
+		}
+		#div-bottom a:active{
+			color: black;
+		}
+		#div-bottom a:visited{
+			color:  rgb(124,124,124);
+		}
+		
+		/*底部第一栏div样式*/
+		#div-bottom-first{
+			/*border: 1px blueviolet solid;*/
+			height: 320px;
+			width: 290px;
+			position: absolute;
+			left: 80px;			
+		}
+		/*底部第一栏div样式*/
+		#div-bottom-second{
+			/*border: 1px blueviolet solid;*/
+			height: 320px;
+			width: 290px;
+			position: absolute;
+			left: 370px;			
+		}
+		/*底部第一栏div样式*/
+		#div-bottom-third{
+			/*border: 1px blueviolet solid;*/
+			height: 320px;
+			width: 290px;
+			position: absolute;
+			left: 660px;			
+		}
+		/*底部第一栏div样式*/
+		#div-bottom-forth{
+			/*border: 1px blueviolet solid;*/
+			height: 320px;
+			width: 290px;
+			position: absolute;
+			left: 950px;			
+		}
+
+	
+	/*<!--网站最底层网站所有权横幅div样式-->*/
+		/*底层所有权横幅总体div样式*/
+		#div-copyright{
+			/*border: 1px yellow solid;*/
+			height: 85px;
+			width: 1366px;
+			background-color: rgb(235,235,235);
+		}
+		
+		/*语言超链接div样式*/
+		#div-copyright-language{
+			/*border: 1px purple solid;*/
+			position: absolute;
+			left: 85px;
+		}
+		#div-copyright-language a{
+			color: black;
+			text-decoration: none;
+		}
+		#div-copyright-language a:hover{
+			color: rgb(0,168,255);
+		}
+		
+		/*copyright超链接div样式*/
+		#div-copyright-cri{
+			/*border: 1px darkcyan solid;*/
+			position: absolute;
+			left: 300px;
+			width: 900px;
+		}
+		#div-copyright-cri li{
+			list-style-type: none;
+			font-size: 12px;
+			float: left;
+			width: 300px;
+		}
+		#div-copyright-cri li:after{
+			content: "|";
+			position: relative;
+		}
+		#div-copyright-cri pre{
+			font-size: 12px;
+			font-family: "微软雅黑";
+		}
+	</style>
+</head>
+
+
+<body>
+	<!--这个网页的div-->
+	<div id="div">
+			<!--页面的导航栏div-->
+			<div id="div-top">
+					<!--页眉-->
+		<div id="top">
+			<div id="top_left">
+				<ol>
+					<li><a href="index.html"><img src="img/meta-top01.png"/></a></li>
+				</ol>
+			</div>
+			
+			<div id="top_among">
+				<div id="top_among_01" >
+						<div id="top_among_01_01">个人及家用产品</div>
+						<!--智能手机下拉-->
+						<div id="top_among_01_02">
+						<ol>
+							<li>智能手机
+								<div id="top_among_01_02_01">
+									
+									<ol>
+										<li><a href="#" style="color: black;"><h3>智能手机</h3></a></li>
+										<li><a href="#">ZenFone (性能怪兽)</a></li>
+										<li><a href="#">鹰眼 ZenFone Zoom (3倍光学变焦)</a></li>
+										<li><a href="#"> ZenFone Selfie (前后双1300万像素)</a></li>
+										<li><a href="#">ZenFone 镭射系列（大屏影音）</a></li>
+										<li><a href="#">电神5000 ZenFone Max(长效待机)</a></li>
+										<li><a href="#">ZenFone 飞马 (乐趣 & 炫彩)</a></li>
+										<li><a href="#">其它手机</a></li>
+										<li><a href="#" style="color: black;"><h3>手机配件</h3></a></li>
+										<li><a href="#">移动电源</a></li>
+										<li><a href="#">背盖及保护套</a></li>
+										<li><a href="#">闪光灯及补光灯</a></li>
+										<li><a href="#">Miracast传频器</a></li>
+									</ol>
+									<img src="img/01/1.png"/>
+								</div> 
+							</li>
+							<li>笔记本电脑及变形本
+								<div id="top_among_01_02_02">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>笔记本电脑</h3></a>
+										</li>
+										<li>
+											<a href="#">ZENBOOK/U系列</a>
+										</li>
+										<li>
+											<a href="#">游戏系列</a>
+										</li>
+										<li>
+											<a href="#">N 系列</a>
+										</li>
+										<li>
+											<a href="#">飞行堡垒系列</a>
+										</li>
+										<li>
+											<a href="#">A/K 系列</a>
+										</li>
+										<li>
+											<a href="#">X 系列</a>
+										</li>
+										<li>
+											<a href="#">E 系列</a>
+										</li>
+										<li>
+											<a href="#">W 系列</a>
+										</li>
+										<li>
+											<a href="#">F/R 系列</a>
+										</li>
+										<li>
+											<a href="#">V/VM 系列</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>变形本</h3></a>
+										</li>
+										<li>
+											<a href="#">Transformer Book 系列 (可拆卸底座)</a>
+										</li>
+										<li>
+											<a href="#">Transformer Book 系列 (可翻转屏幕)</a>
+										</li>
+									</ol>
+									<img src="img/01/78.png"/>
+								</div>
+							</li>
+							<li>平板电脑
+								<div id="top_among_01_02_03">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>平板电脑</h3></a>
+										</li>
+										<li>
+											<a href="#">ZenPad</a>
+										</li>
+										<li>
+											<a href="#">Fonepad</a>
+										</li>
+										<li>
+											<a href="#">Transformer Pad</a>
+										</li>
+										<li>
+											<a href="#">MeMO Pad</a>
+										</li>
+										<li>
+											<a href="#">平板电脑配件</a>
+										</li>
+										<li>
+											<a href="#">背盖及保护套</a>
+										</li>
+										<li>
+											<a href="#">底座</a>
+										</li>
+										<li>
+											<a href="#">手写笔</a>
+										</li>
+										<li>
+											<a href="#">Miracast无线传频器</a>
+										</li>
+									</ol>
+									<img src="img/01/155.png"/>
+								</div>
+							</li>
+							<li>主板
+								<div id="top_among_01_02_04">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>主板</h3></a>
+										</li>
+										<li>
+											<a href="#">华硕大师系列</a>
+										</li>
+										<li>
+											<a href="#">玩家国度(ROG)</a>
+										</li>
+										<li>
+											<a href="#">玩家系列</a>
+										</li>
+										<li>
+											<a href="#">特种部队TUF</a>
+										</li>
+										<li>
+											<a href="#">工作站</a>
+										</li>
+										<li>
+											<a href="#">英特尔平台</a>
+										</li>
+										<li>
+											<a href="#">AMD平台</a>
+										</li>
+										<li>
+											<a href="#">商用</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>主板配件</h3></a>
+										</li>
+										
+									</ol>
+									<img src="img/01/232.png"/>
+								</div>
+							</li>
+							<li>显卡
+								<div id="top_among_01_02_05">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>显卡</h3></a>
+										</li>
+										<li>
+											<a href="#">AMD 系列</a>
+										</li>
+										<li>
+											<a href="#">NVIDIA 系列</a>
+										</li>
+										<li>
+											<a href="#">ROG 系列</a>
+										</li>
+										<li>
+											<a href="#">猛禽系列</a>
+										</li>
+										
+									</ol>
+									<img src="img/01/309.png"/>
+								</div>
+							</li>
+							<li>智能佩戴
+								<div id="top_among_01_02_06">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>ZenWatch</h3></a>
+										</li>
+										<li>
+											<a href="#">ZenWatch</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>VivoWatch</h3></a>
+										</li>
+										
+									</ol>
+									<img src="img/01/386.png"/>
+								</div>
+							</li>
+							<li>台式电脑及一体电脑
+								<div id="top_among_01_02_07">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>游戏系列</h3></a>
+										</li>
+										<li>
+											<a href="#">ROG 系列</a>
+										</li>
+										<li>
+											<a href="#">VivoPC 系列</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>迷你电脑</h3></a>
+										</li>
+										<li>
+											<a href="#">VivoPC</a>
+										</li>
+										<li>
+											<a href="#">VivoMini</a>
+										</li>
+										<li>
+											<a href="#">ROG 系列</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>口袋电脑</h3></a>
+										</li>
+										<li>
+											<a href="#">QM1</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>一体电脑</h3></a>
+										</li>
+										<li>
+											<a href="#">Zen 系列</a>
+										</li>
+									</ol>
+									<img src="img/01/463.png"/>
+								</div>
+							</li>
+							<li>液晶显示器
+								<div id="top_among_01_02_08">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>液晶显示器</h3></a>
+										</li>
+										<li>
+											<a href="#">4K & WQHD显示器</a>
+										</li>
+										<li>
+											<a href="#">摄影设计专业首选</a>
+										</li>
+										<li>
+											<a href="#">游戏影音必备利器</a>
+										</li>
+										<li>
+											<a href="#">主流家用新潮娱乐</a>
+										</li>
+										<li>
+											<a href="#">时尚轻薄精致之选</a>
+										</li>
+										<li>
+											<a href="#">Eye Care显示器</a>
+										</li>
+										<li>
+											<a href="#"><h3>更多…</h3></a>
+										</li>
+										<li>
+											<a href="#">投影仪</a>
+										</li>
+										
+									</ol>
+									<img src="img/01/540.png"/>
+								</div>
+							</li>
+							<li>网络产品
+								<div id="top_among_01_02_09">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>网络产品</h3></a>
+										</li>
+										<li>
+											<a href="#">无线路由器</a>
+										</li>
+										<li>
+											<a href="#">无线网卡</a>
+										
+									</ol>
+									<img src="img/01/617.png"/>
+								</div>
+							</li>
+							<li>多媒体产品
+								<div id="top_among_01_02_10">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>Essence Hi-Fi 音效</h3></a>
+										</li>
+										<li>
+											<a href="#">数/模转换器与耳放</a>
+										</li>
+										<li>
+											<a href="#"><h3>声卡</h3></a>
+										</li>
+										<li>
+											<a href="#">STRIX 猛禽系列</a>
+										</li>
+										<li>
+											<a href="#">游戏系列</a>
+										</li>
+										<li>
+											<a href="#">影音娱乐</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>耳机与耳麦</h3></a>
+										</li>
+										<li>
+											<a href="#">游戏系列</a>
+										</li>
+										<li>
+											<a href="#">STRIX 猛禽系列</a>
+										</li>
+										
+									</ol>
+									<img src="img/01/694.png"/>
+								</div>
+							</li>
+							<li>车载产品
+								<div id="top_among_01_02_11">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>车载产品</h3></a>
+										</li>
+										<li>
+											<a href="#">行车记录仪</a>
+										</li>
+										
+									</ol>
+								</div>
+							</li>
+							<li>周边配件
+								<div id="top_among_01_02_12">
+									<ol>
+										<li>
+											<a href="#" style="color: black;"><h3>电脑包</h3></a>
+										</li>
+										<li>
+											<a href="#">背包</a>
+										</li>
+										<li>
+											<a href="#">手提包</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>键盘与鼠标</h3></a>
+										</li>
+										<li>
+											<a href="#">键盘</a>
+										</li>
+										<li>
+											<a href="#">鼠标</a>
+										</li>
+										<li>
+											<a href="#">键鼠套装</a>
+										</li>
+										<li>
+											<a href="#">鼠标垫</a>
+										</li>
+										<li>
+											<a href="#" style="color: black;"><h3>光存储与存储设备</h3></a>
+										</li>
+										<li>
+											<a href="#">外置蓝光系列</a>
+										</li>
+										<li>
+											<a href="#">外置纤薄DVD/刻录机</a>
+										</li>
+									</ol>
+									<img src="img/01/848.png"/>
+								</div>
+							</li>
+							<li>游戏设备
+								<div id="top_among_01_02_13">
+									<ol>
+										
+										<li>
+											<a href="#" style="color: black;"><h3>ROG - 玩家国度</h3></a>
+										</li>
+										<li>
+											<a href="#">笔记本电脑</a>
+										</li>
+										<li>
+											<a href="#">台式电脑</a>
+										</li>
+										<li>
+											<a href="#">主板</a>
+										</li>
+										<li>
+											<a href="#">显卡</a>
+										</li>
+										<li>
+											<a href="#">液晶显示器</a>
+										</li>
+										<li>
+											<a href="#">耳麦/耳机</a>
+										</li>
+										<li>
+											<a href="#">键盘</a>
+										</li>
+										<li>
+											<a href="#">鼠标</a>
+										</li>
+										<li>
+											<a href="#">鼠标垫</a>
+										</li>
+									</ol>
+									<img src="img/01/925.png"/>
+								</div>
+							</li>
+
+						</ol>
+						
+						</div>
+				</div>
+				<div id="top_among_02">
+						<div id="top_among_02_01">热门活动</div>
+						<div id="top_among_02_02">
+							
+							<ol>
+								<li><a href="#"><img src="img/01/2021.jpg"/></a></li>
+								<li><a href="#"><img src="img/01/2019.jpg"/></a></li>
+								<li><a href="#"><img src="img/01/2022.jpg"/></a></li>
+								<li><a href="#"><img src="img/01/958.jpg"/></a></li>
+								
+							</ol>
+						</div>
+				</div>		
+				<div id="top_among_03">
+						<div id="top_among_03_01">商用商品</div>
+						<div id="top_among_03_02">
+							<ol>
+								<li>产品
+									<div id="top_among_03_02_01">
+										<ol>
+											<li>
+												<a href="#">笔记本电脑</a>
+											</li>
+											<li>
+												<a href="#">服务器与超算</a>
+											</li>
+											<li>
+												<a href="#">台式电脑</a>
+											</li>
+											<li>
+												<a href="#">一体电脑</a>
+											</li>
+											<li>
+												<a href="#">液晶显示器</a>
+											</li>
+											<li>
+												<a href="#">投影仪</a>
+											</li>
+											<li>
+												<a href="#">数位看板</a>
+											</li>
+										</ol>
+									</div>
+								</li>
+								<li>企业规模
+									<div id="top_among_03_02_02">
+										<ol>
+											<li>
+												<a href="#">微型企业</a>
+											</li>
+											<li>
+												<a href="#">中小型企业</a>
+											</li>
+											<li>
+												<a href="#">大型企业</a>
+											</li>
+										</ol>
+									</div>
+								</li>
+								<li>解决方案
+									<div id="top_among_03_02_03">
+										<ol>
+											<li>
+												<a href="#">移动化解决方案</a>
+											</li>
+											<li>
+												<a href="#">企业安全解决方案</a>
+											</li>
+											<li>
+												<a href="#">生产力解决方案</a>
+											</li>
+											<li>
+												<a href="#">信息沟通解决方案</a>
+											</li>
+											<li>
+												<a href="#">绿色办公室</a>
+											</li>
+										</ol>
+									</div>
+								</li>
+								<li>行业应用
+									<div id="top_among_03_02_04">
+										<ol>
+											<li>
+												<a href="#">教育</a>
+											</li>
+											<li>
+												<a href="#">零售与服务</a>
+											</li>
+											<li>
+												<a href="#">工业制造</a>
+											</li>
+										</ol>
+									</div>
+								</li>
+							</ol>
+						</div>
+				</div>
+				<div id="top_among_04">
+						<div id="top_among_04_01">服务支持</div>
+						<div id="top_among_04_02">
+							<ol>
+								<li>
+									<a href="#">服务与支持</a>
+								</li>
+								<li>
+									<a href="#">玩家国度论坛</a>
+								</li>
+								<li>
+									<a href="#">ZenTalk 硕粉俱乐部</a>
+								</li>
+								<li>
+									<a href="#">ZenCare</a>
+								</li>
+							</ol>
+						</div>
+				</div>
+				<div id="top_among_05">
+					<a href="html/store/hssc.html" style="color: black;text-decoration: none;">
+						华硕商城
+					</a>
+				</div>
+
+			</div>
+			
+			<div id="top_right">
+				
+				<form action="#top_right" method="get">
+					
+					<a href="html/login/ASUS_login.html" style="color: black;">登录</a>
+					<input size="20px" style="height:28px; margin-left: 10px;" />
+					
+				</form>
+			</div>
+
+		</div>
+						
+						
+						
+						
+						
+						
+					<!--导航栏图片div-->
+					<!--<div id="div-top-pic">
+						<a href="">
+							<img src="img\meta-top01.png">
+						</a>
+					</div>-->
+					
+					
+					
+					
+					
+					
+					<!--导航栏字符div-->
+					<!--<div id="div-top-nav">
+						<li>
+							个人及家用产品&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+							
+						<li>
+							热门活动&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+							
+						<li>
+							商用产品&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						
+						<li>
+							服务支持&nbsp;&nbsp;&nbsp;&nbsp;
+						</li>
+						
+						<li>
+							<a href="index.html">
+								华硕官方商城&nbsp;&nbsp;&nbsp;&nbsp;
+							</a>
+						</li>
+					</div>-->
+					
+					<!--导航栏搜索和登录&搜索栏div-->
+					<!--<div id="div-top-last">-->
+						<!--标题栏登录div-->
+						<!--<div id="div-top-last-login">
+							<a href="" >
+								登录
+							</a>
+						</div>-->
+						<!--搜索栏div-->
+						<!--<div id="div-top-last-search">-->
+							<!--搜索栏表单-->
+							<!--<form>-->
+								<!--<input type="text" name="search"/>
+							</form>
+						</div>
+					</div>-->
+			<!--</div>--><!--导航栏div结束-->
+			
+			
+			
+			<!--页面中部展示内容div-->
+			<div id="div-middle-pic">
+				<!--第一张图片div-->
+				<div id="div-middle-1st">
+					<a href="html/pagelink/index-01.html">
+						<img src="img/middle-pic1.png"/>
+					</a>
+				</div>
+				<!--第二张图片div-->
+				<div>
+					<a href="">
+						<img src="img/middle-pic2.png"/>
+					</a>
+				</div>
+				<!--第三、四张图片div-->
+				<div>
+					<a href="">
+						<img src="img/middle-pic5.png"/>
+					</a>
+					
+				</div>
+				<div>
+					<a href="">
+						<img src="img/middle-pic6.png"/>
+					</a>
+					
+				</div>
+				<div>
+					<a href="">
+						<img src="img/middle-pic7.png"/>
+					</a>
+					
+				</div>
+			</div><!--页面中部div结束-->
+			
+			
+			
+			
+			<!--网站底部地图div-->
+			<div id="div-bottom">
+				<!--网站底部地图 左侧第一栏-->
+				<div id="div-bottom-first">
+					<br/><h4>探索更多</h4><br/>
+					<ul>
+						<li>
+							<a href="http://www.asus.com.cn/Static_WebPage/NB-ROG-Shop/" style="height: 30px;">
+								玩家国度官方旗舰店
+							</a>
+						</li>
+						<li>
+							<a href="http://store.asus.com.cn/?_ga=1.180490734.879794938.1470359177" style="height: 30px;">
+								华硕官网商城
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/Static_WebPage/experience-store/">
+								华硕体验店
+							</a>
+						</li>
+						<li>
+							<a href="https://asusshouji.tmall.com/?spm=a1z10.3-b.w11380416-14056605583.125.C9FVYu&scene=taobao_shop">
+								华硕天猫旗舰店
+							</a>
+						</li>
+						<li>
+							<a href="https://asusshouji.tmall.com/?spm=a1z10.3-b.w11380416-14056605583.125.C9FVYu&scene=taobao_shop">
+								华硕天猫手机旗舰店
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/support/">
+								最新活动
+							</a>
+						</li>
+						<li>
+							<a href="https://www.asuswebstorage.com/navigate/">
+								云端服务
+							</a>
+						</li>
+					</ul>
+				</div><!--网站底部地图 左侧第一栏 结束-->	
+				
+				<!--网站底部地图 第二栏-->
+				<div id="div-bottom-second">
+					<br/><h4>关于我们</h4><br />
+					
+					<ul>
+						<li>
+							<a href="http://www.asus.com.cn/Award/Award?&Area=CHINA">
+								奖项
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/News/">
+								最新消息
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/About_ASUS/Origin-of-the-Name-ASUS">
+								关于华硕
+							</a>
+						</li>
+						<li>
+							<a href="http://event.asus.com.cn/event/?_ga=1.58062051.879794938.1470359177">
+								最新活动
+							</a>
+						</li>
+						<li>
+							<a href="http://job.asus.com.cn/?_ga=1.58062051.879794938.1470359177">
+								人才招聘
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/Investor/">
+								财务资讯
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/ASUS_Website_Information/GreenASUS">
+								绿色华硕
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/ASUS_Website_Information/Friend_Links">
+								友情链接
+							</a>
+						</li>
+						<li>
+							<a href="http://channel.asus.com.cn/cbd2/?_ga=1.180614638.879794938.1470359177">
+								经销商专区
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/About_ASUS/procurement/">
+								供应商专区
+							</a>
+						</li>
+						<li>
+							<a href="http://csr.asus.com/chinese/?_ga=1.221109841.879794938.1470359177">
+								企业社会责任
+							</a>
+						</li>
+					</ul>
+				</div><!--网站底部地图 第二栏 结束-->
+				
+				<!--网站底部地图 第三栏-->
+				<div id="div-bottom-third">
+					<br />
+						<h4>
+							服务支持
+						</h4>
+					<br />
+					<ul>
+						<li>
+							<a href="https://account.asus.com.cn/?_ga=1.16586239.879794938.1470359177">
+								华硕会员专区
+							</a>
+						</li>
+						<li>
+							<a href="http://channel.asus.com.cn/DealerQuery?_ga=1.16586239.879794938.1470359177">
+								华硕授权实体门店查询
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/support/Service-Center/china">
+								华硕服务中心查询
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/About_ASUS/etailer">
+								系统类网络授权经销商
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/About_ASUS/etailer-OP/">
+								配件类网络授权经销商
+							</a>
+						</li>
+					</ul>
+				</div><!--网站底部地图 第三栏 结束-->
+				
+				<!--网站底部地图 第四栏-->
+				<div id="div-bottom-forth">
+					<br />
+						<h4>
+							社区
+						</h4>
+					<br />
+					<ul>
+						<li>
+							<a href="">
+								<img src="img/weibo.png" />
+								<img src="img/renren.png" />
+								<img src="img/weixin.png" />
+							</a>
+						</li>
+						<li>
+							<a href="http://i.youku.com/asusrog">
+								华硕ROG晚间国度官方视频站
+							</a>
+						</li>
+						<li>
+							<a href="http://fs.asus.com.cn/?_ga=1.11154941.879794938.1470359177">
+								玩家国度社区论坛
+							</a>
+						</li>
+						<li>
+							<a href="http://zentalk.asus.com.cn/?_ga=1.11154941.879794938.1470359177">
+								ZenTalk硕粉俱乐部
+							</a>
+						</li>
+						<li>
+							<a href="http://www.asus.com.cn/support/zencare/">
+								ZenCare
+							</a>
+						</li>
+						<li>
+							<a href="http://tieba.baidu.com/f?kw=zenfone&fr=ala0&loc=rec">
+								ZenFone吧
+							</a>
+						</li>
+						<li>
+							<a href="http://weibo.com/padfoneofasus">
+								华硕智能手机微博
+							</a>
+						</li>
+					</ul>
+				</div><!--网站底部地图 第四栏 结束-->			
+			</div><!--网站底部地图div 结束-->
+			
+			
+			
+			<!--网站最底层网站所有权横幅div样式-->
+			<div id="div-copyright">
+				<!--语言选择div-->
+				<div id="div-copyright-language">
+						<img src="img/earth.png" />
+						<a href="">
+							China /简体中文
+						</a>
+				</div><!--语言选择div-->
+				
+				<!--网站的copyright的div-->
+				<div id="div-copyright-cri">
+					<pre>
+						隐私权保护政策    使用条款   沪ICP备11025349号-3   ©ASUSTeK Computer Inc. All rights reserved.
+					
+					</pre>
+					
+				</div><!--网站的copyright的div 结束-->
+				
+			</div><!--网站最底层网站所有权横幅div样式  结束-->
+	</div><!--整个网页div结束-->
+
+</body>
+</html>

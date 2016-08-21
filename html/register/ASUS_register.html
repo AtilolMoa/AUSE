@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>华硕账户注册</title>
+		
+		<link rel="shortcut icon" type="mage/x-icon" href="title1.png"/>
+		<!--link定义文档与外部文件之间的关系，网站图标-->
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			body{/*页面整体*/
+				background-color: rgb(243,243,243);
+				/*页面的整体颜色*/
+			}
+			#top_head{        /*头部大小样式*/ 
+				/*border: solid 1px lawngreen;*/
+				width: 100%;
+				height: 75px;
+			}
+			#top_head_ASUS{    /*ASUA图片位置大小*/
+				/*border: solid 1px black;*/
+				width: 115px;
+				height: 30px;
+				position: absolute;
+				left: 135px;
+				top: 20px;
+				background-image: url(../../img/ASUS.png);
+				background-size: 115px 30px;
+			}
+			#top_head_language{/*设置整体语言的位置大小*/
+				/*border: solid 1px black;*/
+				width: 125px;
+				height: 25px;
+				position: absolute;
+				top: 20px;
+				right: 155px;
+				background-image: url(../../img/language.png) ;/*语言部分的图片*/
+				background-repeat: no-repeat;/*取消重复平铺*/	
+			}
+			#top_head_language_other select{/*语言下拉列表*/
+				position:absolute;
+				left: 30px;
+				height: 25px;
+				line-height: 25px;
+				background-color:rgb(243,243,243) ;
+				border: none;  /*取消边框*/	
+			}
+			#center_body{  /*设置主体部分大小*/
+				/*border: solid 1px black;*/
+				width: 1085px;
+				height: 1100px;
+				position: relative;  /*相对*/
+				left: 135px;
+				background-color: white;
+			}
+			#box{/*设置内部格式大小,方便定位*/
+				/*border: solid 1px lightblue;*/
+				position: absolute;
+				width: 610px;
+				height: 100%;
+				left: 230px;
+			}
+			#center_body_1{/*马上注册*/
+				/*border: solid 1px black;*/
+				width: 200px;
+				height: 50px;
+				position: absolute;
+				top: 35px;
+				font-size: 32px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#web{/*微博图片*/
+				/*border: solid 1px black;*/
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 100px;
+				background-image: url(../../img/web.png);
+				background-repeat: no-repeat;
+			}
+			#QQ{/*QQ图片*/
+				/*border: solid 1px black;*/
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 70px;
+				top: 100px;
+				background-image: url(../../img/QQ.png);
+				background-repeat: no-repeat;
+			}
+			#line{/*分隔线*/
+				/*border: solid 1px black;*/
+				width: 100%;
+				height: 2px;
+				background-color: rgb(243,243,243);
+				position: absolute;
+				top:190px ;
+			}
+			#center_body_welcome{/*欢迎词*/
+				/*border: solid 1px black;*/
+				width: 96%;
+				height: 50px;
+				position: absolute;
+				top:220px ;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+				font-size: 12px;
+			}
+			#center_body_attention{
+				/*border: solid 1px black;*/
+				width: 250px;
+				height: 30px;
+				position: absolute;
+				top:265px ;
+				color: red;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+				font-size: 12px;
+			}
+			#center_body_number{/*输入账号*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 25px;
+				position: absolute;
+				top:320px ;
+			}
+
+			#center_body_number1{/*邮箱框*/
+				position: absolute;
+				top: 30px;
+			}
+			#center_body_number1 span{/*邮箱框下的字*/
+				color: red;
+				font-size: 12px;
+				font-family: '微软雅黑',  sans-serif ;
+			}
+			
+			#center_body_password{/*密码*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 420px;
+			}
+			#center_body_password1 {/*密码框*/
+				position: absolute;
+				top: 30px;
+			}
+			#center_body_password1 span{/*密码框下的字*/
+				color: red;
+				font-size: 12px;
+				font-family: '微软雅黑',  sans-serif ;
+			}
+			#center_body_true{/*再次确认*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 520px;
+			}
+			#center_body_true1 {/*密码框*/
+				position: absolute;
+				top: 30px;
+			}
+			#center_body_country{/*国家地区*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 605px;
+			}
+			#center_body_country_select{/*国家地区列表*/
+				position: absolute;
+				top: 30px;
+			}
+			#center_body_birthday span{/*出生年月*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 700px;
+				left: 10px;
+			}
+			#center_body_birthday_year{/*出生年份*/
+				position: absolute;
+				top: 730px;
+			}
+			#center_body_birthday_month{/*出生月份*/
+				position: absolute;
+				top: 730px;
+				left: 265px;
+			}
+			#center_body_yanzheng{/*验证码*/
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 795px;	
+			}
+			#center_body_yanzheng1{/*验证码框*/
+				position: absolute;
+				top: 30px;
+			}
+			#center_body_agree{
+				position: absolute;
+				top: 920px;	
+			}
+			#agree a{
+				font-size: 13px; 
+				font-family: '微软雅黑',  sans-serif ; 
+				color: #333;
+			}
+			#agree span{
+				color: #00A8FF;
+				font-size: 13px;
+				font-family: '微软雅黑',  sans-serif ; 
+			}
+			#agree span:hover{
+				color: rgb(0,103,207);
+			}
+			#center_body_enter{
+				/*border: solid 1px #00A8FF;*/
+				width: 200px;
+				height: 30px;
+				position: absolute;
+				top: 1000px;
+				background-color:#00A8FF ;
+				left: 100px;
+				line-height: 30px;
+				text-align: center;
+				
+			}
+			#center_body_enter:hover{
+				background-color: rgb(0,143,217);
+			}
+			#center_body_enter a{
+				text-decoration:none;
+				color:white;
+			}
+			
+			#under_foot{/*尾部网页信息*/
+				margin: 40px;
+				color: #7C7C7C;
+				margin-left: 400px;
+				font-size: 12px;
+			}
+			#under_foot span:hover{
+				color: black;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="top_head"><!--注册页面头部-->
+			<a href="../../index.html">
+				<div id="top_head_ASUS"></div><!--头部左侧华硕图片-->
+			</a>
+			<div id="top_head_language"><!--头部右侧语言选择-->
+				<!--<span>简体中文</span>-->
+				<div id="top_head_language_other"><!--语言下拉列表-->
+				<select name="language" >
+					<option value="1" selected>简体中文</option>
+					<option value="2">繁體中文</option>
+					<option value="3">English</option>
+					<option value="4">한국어</option>
+					<option value="5">Русский-Украина</option>
+					<option value="6">العربية</option>
+					<option value="7">Deutsch</option>
+					<option value="8">Français</option>
+					<option value="9">Українська</option>
+					<option value="10">Русский</option>
+					<option value="11">עברית</option>
+					<option value="12">ไทย</option>
+				</select>
+				</div>
+			</div>
+		</div>
+		
+		<div id="center_body"><!--注册页面主体-->
+			<div id="box">
+			<div id="center_body_1">马上注册</div>	
+			<div id="web"></div>
+			<div id="QQ"></div>
+			<div id="line"></div>
+			<div id="center_body_welcome"><!--欢迎词-->
+				<span>欢迎您，华硕会员！填写完以下信息后，您的注册便完成了。
+					我们不会以任何其它方式使用您所提供的信息，因此，
+					在填写信息时请放心。
+				</span>
+			</div>
+			<div id="center_body_attention"><!--注意必填项-->
+				<span>标有星号（*）的项目为必填项。</span>
+			</div>
+			<div id="center_body_number"><!--账号-->
+					<span id="no1" style="color: red;">*</span>
+					<span id="no2" style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">华硕帐号:</span>
+					<span id="no3" style="font-size: 12px;color: #666;font-family: '微软雅黑',  sans-serif ;">电子邮件即为您的华硕帐号</span>
+			
+				<div id="center_body_number1">
+					<input type="email" style="width: 500px; height: 30px;"/><br />
+					<span>请输入email</span>
+				</div>
+			</div>	
+			<div id="center_body_password"><!--密码-->
+					<span id="no1" style="color: red;">*</span>
+					<span id="no2" style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">密码:</span>
+					<span id="no3" style="font-size: 12px;color: #666;font-family: '微软雅黑',  sans-serif ;">
+					请输入8-25个字符
+					</span>
+				<div id="center_body_password1">
+					<input type="password" style="width: 500px; height: 30px;"/><br />
+					<span>8-25个字符</span>
+				</div>
+			</div>
+			<div id="center_body_true"><!--再次确认-->
+					<span id="no1" style="color: red;">*</span>
+					<span id="no2" style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">
+						确认密码:
+					</span>
+					<span id="no3" style="font-size: 12px;color: #666;font-family: '微软雅黑',  sans-serif ;">
+					请再次输入密码
+					</span>
+				<div id="center_body_true1">
+					<input type="password" style="width: 500px; height: 30px;"/><br />
+				</div>
+			</div>
+			<div id="center_body_country"><!--国家地区-->
+				<span style="color: red;">*</span>
+				<span style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">国家/地区:</span>
+				<div id="center_body_country_select"><!--国家下拉列表-->
+					<select name="country" style="width: 505px; height: 35px;"><br />
+						<option value="1" selected>China (中國)</option>
+						<option value="2">Hong Kong (香港)</option>
+						<option value="3">Afghanistan ("جمهوری اسلامی افغانستان")</option>
+						<option value="4">American Samoa</option>
+						<option value="5">Andorra (Principat d'Andorra)</option>
+						<option value="6">Bahrain (مملكة البحرين)</option>
+						<option value="7">Egypt (مصر‎)</option>
+						<option value="8">Germany (Deutschland)</option>
+						<option value="9">Gibraltar</option>
+						<option value="10">Honduras</option>
+					</select>					
+				</div>	
+			</div>
+			<div id="center_body_birthday"><!--出生日期-->
+				<span style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">生日(公元):</span>
+				<div id="center_body_birthday_year"><!--出生年份-->
+					<select name="year" style="width: 240px; height: 35px;"><br />
+						<option value="0">--请选择--</option>
+						<option value="1">2010</option>
+						<option value="2">2009</option>
+						<option value="3">2008</option>
+						<option value="4">2007</option>
+						<option value="5">2006</option>
+						<option value="6">2005</option>
+						<option value="7">2004</option>
+						<option value="8">2003</option>
+						<option value="9">2002</option>
+						<option value="10">2001</option>
+						<option value="11">2000</option>
+						<option value="12">1999</option>
+						<option value="13">1998</option>
+						<option value="14">1997</option>
+						<option value="15">1996</option>
+						<option value="16">1995</option>
+						<option value="17">1994</option>
+						<option value="18">1993</option>
+						<option value="19">1992</option>
+						<option value="20">1991</option>
+					</select>
+				</div>	
+				<div id="center_body_birthday_month"><!--出生月份-->
+					<select name="month" style="width: 240px; height: 35px;"><br />
+						<option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+			</div>
+			<div id="center_body_yanzheng"><!--验证码-->
+				<span style="color: red;">*</span>
+				<span style="font-size: 14px; font-family: '微软雅黑',  sans-serif ;">验证码:</span>
+				<div id="center_body_yanzheng1">
+					<input type="text" style="width: 505px; height: 35px;"/><br />
+					<img src="../../img/re1.png" style="position: absolute;top: 50px;"/>
+				</div>
+				
+			</div>
+			<div id="center_body_agree">
+				<div id="agree">
+					<input type="checkbox"/>
+					<a>我已阅读并同意华硕</a>
+					<span>「使用条款」</span>
+					<a>华硕</a>
+					<span>「隐私权政策」</span>
+					<a>、ASUS Webstorage</a>
+					<span>「使用条款」</span>
+					<a>、ASUS Webstorage</a>
+					<span>「隐私权政策」</span>
+				</div>
+				<div id="agree" style="font-size: 14px; font-family: '微软雅黑',  sans-serif ; color: #333;;">
+					<input type="checkbox"checked />我愿意收到华硕相关新闻，软件升级，产品及服务更新之讯息或行销广告。
+				</div>
+			</div>
+			
+			<a href="html/login/ASUS_success.html"  style="color: white; text-decoration: none;">
+			<div id="center_body_enter"><!--成功进入账号-->
+				<!--添加链接-->
+				<a href="../register/ASUS_success.html">
+					加入账号
+				</a>
+				
+			</div>
+			</a>	
+			</div><!--box-->
+			
+		</div><!--body-->
+		
+		
+		
+		<div id="under_foot"><!--声明尾部-->
+			<span>隐私权保护政策</span>
+   			<span>使用条款</span>
+    		<span>沪ICP备11025349号-3 </span>
+    			©ASUSTeK Computer Inc. All rights reserved.
+		</div>
+	</body>
+</html>

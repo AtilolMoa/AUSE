@@ -1,0 +1,3397 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>华硕商城</title>
+		
+		<link rel="shortcut icon" type="image/x-icon" href="title1.png" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			#top_1 {
+				background-color: black;
+				width: 100%;
+				height: 30px;
+			}
+			
+			#top_1_1 {
+				height: 30px;
+				width: 320px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				color: white;
+				position: absolute;
+				top: 0px;
+				left: 30px;
+			}
+			
+			#top_1_2 {
+				width: 110px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				position: absolute;
+				top: 0px;
+				left: 300px;
+			}
+			
+			#top_1_2 a {
+				color: white;
+			}
+			
+			#top_1_2 a:hover {
+				color: gainsboro;
+			}
+			
+			#top_1_3 {
+				width: 180px;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				font-size: 12px;
+				position: absolute;
+				top: 0px;
+				left: 1130px;
+			}
+			
+			#top_1_3 a {
+				color: white;
+			}
+			
+			#top_1_3 a:hover {
+				color: gainsboro;
+			}
+			
+			#top_2 {
+				height: 120px;
+				width: 100%;
+			}
+			
+			#top_2_1 {
+				height: 50px;
+				width: 200px;
+				position: absolute;
+				top: 70px;
+				left: 70px;
+			}
+			
+			#top_2_2 {
+				height: 40px;
+				width: 400px;
+				position: absolute;
+				top: 80px;
+				left: 840px;
+				border: 1px gainsboro solid;
+				text-align: center;
+			}
+			
+			#top_2_2:hover {
+				border: 1px grey solid;
+			}
+			
+			#top_2_3 {
+				/*background-color: coral;
+				height: 40px;
+				width: 50px;*/
+				position: absolute;
+				top: 81px;
+				left: 1245px;
+			}
+			
+			#top_2_4 {
+				height: 30px;
+				width: 360px;
+				position: absolute;
+				top: 125px;
+				left: 840px;
+				font-size: 13px;
+			}
+			
+			#top_3 {
+				background-color: coral;
+				height: 40px;
+				width: 100%;
+			}
+			
+			#top_3_1_1 {
+				background-color: orange;
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 60px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_1_2 {
+				border: 1px gainsboro solid;
+				border-top: none;
+				height: 352px;
+				width: 180px;
+				position: absolute;
+				top: 190px;
+				left: 60px;
+			}
+			
+			#top_3_1_2 li {
+				list-style-type: none;
+				height: 50px;
+				width: 160px;
+				line-height: 50px;
+				padding-left: 20px;
+				color: grey;
+				font-size: 14px;
+				font-family: "宋体";
+			}
+			
+			#top_3_1_2 ol>li:hover {
+				/*针对top_3_1_2所有的后代li边框的显示*/
+				border: 2px orange solid;
+				border-right: none;
+				color: black;
+			}
+			
+			#top_3_1_2 li:hover div {
+				/*当鼠标悬浮li时，li中的div显示出来*/
+				display: block;
+			}
+			
+			#top_3_1_2_div1 {
+				/*第一个li笔记本电脑所显示出的边框*/
+				background-color: white;
+				height: 320px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 0px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div1 ol li {
+				/*设置第一个li笔记本电脑所显示出的边框中的li的字体大小和边框格式*/
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div2 {
+				/*第二个li整机产品所显示出的边框*/
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 50px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div2 ol li {
+				/*设置第二个li所显示出的边框中的li的字体大小和边框格式*/
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div3 {
+				background-color: white;
+				height: 160px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 100px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div3 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div4 {
+				background-color: white;
+				height: 320px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 150px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div4 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div5 {
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 200px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div5 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div6 {
+				background-color: white;
+				height: 120px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 250px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div6 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_1_2_div7 {
+				background-color: white;
+				height: 220px;
+				width: 730px;
+				border: 2px orange solid;
+				position: absolute;
+				top: 300px;
+				left: 180px;
+				display: none;
+			}
+			
+			#top_3_1_2_div7 ol li {
+				width: 700px;
+				border: 1px gainsboro dashed;
+				border-top: none;
+				border-left: none;
+				font-size: 12px;
+			}
+			
+			#top_3_2 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 260px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_2:hover {
+				background-color: orange;
+			}
+			#top_3_2 a{
+				color: white;
+				text-decoration: none;
+			}
+			#top_3_2 a:visited{
+				color: white;
+				text-decoration: none;
+			}
+			
+			#top_3_3 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 440px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_3:hover {
+				background-color: orange;
+			}
+			
+			#top_3_4 {
+				height: 40px;
+				width: 180px;
+				position: absolute;
+				top: 150px;
+				left: 620px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_4:hover {
+				background-color: orange;
+			}
+			
+			#top_3_5 {
+				height: 40px;
+				width: 120px;
+				position: absolute;
+				top: 150px;
+				left: 800px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_5:hover {
+				background-color: orange;
+			}
+			
+			#top_3_6 {
+				height: 40px;
+				width: 120px;
+				position: absolute;
+				top: 150px;
+				left: 910px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+			}
+			
+			#top_3_6:hover {
+				background-color: orange;
+			}
+			
+			#top_3_7_1 {
+				height: 40px;
+				width: 240px;
+				position: absolute;
+				top: 150px;
+				left: 1040px;
+				line-height: 40px;
+				text-align: center;
+				color: white;
+				font-size: 13px;
+			}
+			
+			#top_3_7_1:hover {
+				background-color: orange;
+			}
+			
+			#top_3_7_2 {
+				background-color: white;
+				height: 90px;
+				width: 240px;
+				border: 1px orange solid;
+				border-top: none;
+				position: absolute;
+				top: 190px;
+				left: 1040px;
+				line-height: 90px;
+				text-align: center;
+				font-size: 13px;
+				display: none;
+			}
+			
+			#top_3_7_1:hover+div {
+				display: block;
+			}
+			#top_3_7_1 a{
+				color: white;
+				text-decoration: none;
+				
+			}
+			#top_3_7_1 a:visited{
+				color: white;
+				text-decoration: none;
+				
+			}
+			
+			#top_4 {
+				position: absolute;
+				top: 205px;
+				left: 270px;
+				z-index: -2;
+			}
+			
+			#circle {
+				/*background: red;*/
+				height: 40px;
+				width: 200px;
+				position: absolute;
+				top: 525px;
+				left: 770px;
+				z-index: -1;
+			}
+			
+			#circle1 {
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+				line-height: 40px;
+				text-align: center;
+				color: coral;
+			}
+			
+			#circle1:hover {
+				background: coral;
+				color: white;
+			}
+			
+			#circle2 {
+				position: absolute;
+				top: 0px;
+				left: 40px;
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+				line-height: 40px;
+				text-align: center;
+				color: coral;
+			}
+			
+			#circle2:hover {
+				background: coral;
+				color: white;
+			}
+			
+			#circle3 {
+				position: absolute;
+				top: 0px;
+				left: 80px;
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+				line-height: 40px;
+				text-align: center;
+				color: coral;
+			}
+			
+			#circle3:hover {
+				background: coral;
+				color: white;
+			}
+			
+			#circle4 {
+				position: absolute;
+				top: 0px;
+				left: 120px;
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+				line-height: 40px;
+				text-align: center;
+				color: coral;
+			}
+			
+			#circle4:hover {
+				background: coral;
+				color: white;
+			}
+			
+			#circle5 {
+				position: absolute;
+				top: 0px;
+				left: 160px;
+				height: 40px;
+				width: 40px;
+				border-radius: 20px;
+				line-height: 40px;
+				text-align: center;
+				color: coral;
+			}
+			
+			#circle5:hover {
+				background: coral;
+				color: white;
+			}
+			
+			#top_5 {
+				position: absolute;
+				top: 590px;
+				left: 290px;
+				z-index: -1;
+			}
+			
+			#top_6 {
+				position: absolute;
+				top: 590px;
+				left: 650px;
+				z-index: -1;
+			}
+			
+			#top_7 {
+				position: absolute;
+				top: 208px;
+				left: 1000px;
+				z-index: -1;
+			}
+			
+			#top_8 {
+				position: absolute;
+				top: 388px;
+				left: 1000px;
+			}
+			
+			#top_9 {
+				position: absolute;
+				top: 568px;
+				left: 1000px;
+			}
+			
+			#top_10 {
+				height: 45px;
+				width: 1200px;
+				position: absolute;
+				top: 770px;
+				left: 80px;
+				border: 1px gainsboro solid;
+			}
+			
+			#top_10_1 {
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				font-size: 18px;
+				color: coral;
+				line-height: 45px;
+			}
+			
+			#top_10_2 {
+				/*background-color:red;*/
+				height: 45px;
+				width: 320px;
+				position: absolute;
+				left: 880px;
+				top: 0px;
+				text-align: center;
+				line-height: 45px;
+				font-size: 12px;
+			}
+			
+			#top_10_2 a:hover {
+				color: blue;
+			}
+			
+			#top_11 {
+				/*background-color: red;*/
+				height: 500px;
+				width: 1200px;
+				position: absolute;
+				top: 840px;
+				left: 80px;
+			}
+			
+			#top_11_1 {}
+			
+			#top_11_2 {
+				position: absolute;
+				top: 250px;
+				left: 0px;
+			}
+			
+			#top_11_3 {
+				position: absolute;
+				top: 120px;
+				left: 0px;
+			}
+			
+			#top_11_4 {
+				height: 40px;
+				width: 300px;
+				border: 1px gainsboro solid;
+				position: absolute;
+				top: -250px;
+				left: 883px;
+				line-height: 40px;
+				padding-left: 15px;
+			}
+			
+			#top_11_5 {
+				position: absolute;
+				top: -240px;
+				left: 200px;
+			}
+			
+			#top_11_5_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -100px;
+				left: 190px;
+				font-size: 12px;
+			}
+			#top_11_5_name:hover{
+				color:blue;
+			}
+			
+			#top_11_5_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_6 {
+				position: absolute;
+				top: -240px;
+				left: 360px;
+			}
+			
+			#top_11_6_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -100px;
+				left: 360px;
+				font-size: 12px;
+			}
+			#top_11_6_name:hover{
+				color:blue;
+			}
+			
+			#top_11_6_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_7 {
+				position: absolute;
+				top: -240px;
+				left: 530px;
+			}
+			
+			#top_11_7_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -100px;
+				left: 530px;
+				font-size: 12px;
+			}
+			#top_11_7_name:hover{
+				color:blue;
+			}
+			
+			#top_11_7_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_8 {
+				position: absolute;
+				top: -240px;
+				left: 700px;
+			}
+			
+			#top_11_8_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -100px;
+				left: 700px;
+				font-size: 12px;
+			}
+			#top_11_8_name:hover{
+				color:blue;
+			}
+			
+			#top_11_8_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_9 {
+				position: absolute;
+				top: 0px;
+				left: 200px;
+			}
+			
+			#top_11_9_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 200px;
+				font-size: 12px;
+			}
+			#top_11_9_name:hover{
+				color:blue;
+			}
+			
+			#top_11_9_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 180px;
+				left: 200px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_10 {
+				position: absolute;
+				top: 0px;
+				left: 360px;
+			}
+			
+			#top_11_10_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 360px;
+				font-size: 12px;
+			}
+			#top_11_10_name:hover{
+				color:blue;
+			}
+			
+			#top_11_10_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 180px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_11 {
+				position: absolute;
+				top: 0px;
+				left: 530px;
+			}
+			
+			#top_11_11_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 530px;
+				font-size: 12px;
+			}
+			#top_11_11_name:hover{
+				color:blue;
+			}
+			
+			#top_11_11_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 180px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_12 {
+				position: absolute;
+				top: 0px;
+				left: 700px;
+			}
+			
+			#top_11_12_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 700px;
+				font-size: 12px;
+			}
+			#top_11_12_name:hover{
+				color:blue;
+			}
+			
+			#top_11_12_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 180px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_13 {
+				position: absolute;
+				top: -180px;
+				left: 883px;
+			}
+			
+			#top_11_13_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -170px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_11_13_name:hover{
+				color:blue;
+			}
+			
+			#top_11_13_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -130px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_14 {
+				position: absolute;
+				top: -100px;
+				left: 883px;
+			}
+			
+			#top_11_14_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -90px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_11_14_name:hover{
+				color:blue;
+			}
+			
+			#top_11_14_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_15 {
+				position: absolute;
+				top: -20px;
+				left: 883px;
+			}
+			
+			#top_11_15_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -10px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_11_15_name:hover{
+				color:blue;
+			}
+			
+			#top_11_15_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 30px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_16 {
+				position: absolute;
+				top: 60px;
+				left: 883px;
+			}
+			
+			#top_11_16_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 70px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_11_16_name:hover{
+				color:blue;
+			}
+			
+			#top_11_16_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 110px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_11_17 {
+				position: absolute;
+				top: 140px;
+				left: 883px;
+			}
+			
+			#top_11_17_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 150px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_11_17_name:hover{
+				color:blue;
+			}
+			
+			#top_11_17_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 190px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_12 {
+				height: 45px;
+				width: 1200px;
+				position: absolute;
+				top: 520px;
+				left: 0px;
+				border: 1px gainsboro solid;
+			}
+			
+			#top_12_1 {
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				font-size: 18px;
+				color: coral;
+				line-height: 45px;
+			}
+			
+			#top_12_2 {
+				/*background: red;*/
+				height: 45px;
+				width: 200px;
+				position: absolute;
+				left: 970px;
+				top: 0px;
+				line-height: 45px;
+				font-size: 12px;
+			}
+			
+			#top_12_2 a:hover {
+				color: blue;
+			}
+			
+			#top_13 {
+				/*background-color: red;*/
+				height: 500px;
+				width: 1200px;
+				position: absolute;
+				top: 590px;
+				left: 0px;
+			}
+			
+			#top_13_1 {}
+			
+			#top_13_2 {
+				position: absolute;
+				top: 250px;
+				left: 0px;
+			}
+			
+			#top_13_3 {
+				position: absolute;
+				top: 120px;
+				left: 0px;
+			}
+			
+			#top_13_4 {
+				height: 40px;
+				width: 300px;
+				border: 1px gainsboro solid;
+				position: absolute;
+				top: -250px;
+				left: 883px;
+				line-height: 40px;
+				padding-left: 15px;
+			}
+			
+			#top_13_5 {
+				position: absolute;
+				top: -250px;
+				left: 190px;
+			}
+			
+			#top_13_5_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -120px;
+				left: 190px;
+				font-size: 12px;
+			}
+			#top_13_5_name:hover{
+				color:blue;
+			}
+			
+			#top_13_5_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_6 {
+				position: absolute;
+				top: -250px;
+				left: 360px;
+			}
+			
+			#top_13_6_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -120px;
+				left: 360px;
+				font-size: 12px;
+			}
+			#top_13_6_name:hover{
+				color:blue;
+			}
+			
+			#top_13_6_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_7 {
+				position: absolute;
+				top: -250px;
+				left: 530px;
+			}
+			
+			#top_13_7_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -120px;
+				left: 530px;
+				font-size: 12px;
+			}
+			#top_13_7_name:hover{
+				color:blue;
+			}
+			
+			#top_13_7_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_8 {
+				position: absolute;
+				top: -250px;
+				left: 700px;
+			}
+			
+			#top_13_8_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -120px;
+				left: 700px;
+				font-size: 12px;
+			}
+			#top_13_8_name:hover{
+				color:blue;
+			}
+			
+			#top_13_8_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_9 {
+				position: absolute;
+				top: 0px;
+				left: 190px;
+			}
+			
+			#top_13_9_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 190px;
+				font-size: 12px;
+			}
+			#top_13_9_name:hover{
+				color:blue;
+			}
+			#top_13_9_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_10 {
+				position: absolute;
+				top: 0px;
+				left: 360px;
+			}
+			
+			#top_13_10_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 360px;
+				font-size: 12px;
+			}
+			#top_13_10_name:hover{
+				color:blue;
+			}
+			
+			#top_13_10_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_11 {
+				position: absolute;
+				top: 0px;
+				left: 530px;
+			}
+			
+			#top_13_11_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 530px;
+				font-size: 12px;
+			}
+			#top_13_11_name:hover{
+				color:blue;
+			}
+			
+			#top_13_11_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_12 {
+				position: absolute;
+				top: 0px;
+				left: 700px;
+			}
+			
+			#top_13_12_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 700px;
+				font-size: 12px;
+			}
+			#top_13_12_name:hover{
+				color:blue;
+			}
+			
+			#top_13_12_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_13 {
+				position: absolute;
+				top: -180px;
+				left: 883px;
+			}
+			
+			#top_13_13_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -170px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_13_13_name:hover{
+				color:blue;
+			}
+			
+			#top_13_13_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -130px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_14 {
+				position: absolute;
+				top: -100px;
+				left: 883px;
+			}
+			
+			#top_13_14_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -90px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_13_14_name:hover{
+				color:blue;
+			}
+			
+			#top_13_14_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -50px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_15 {
+				position: absolute;
+				top: -20px;
+				left: 883px;
+			}
+			
+			#top_13_15_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -10px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_13_15_name:hover{
+				color:blue;
+			}
+			
+			#top_13_15_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 30px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_16 {
+				position: absolute;
+				top: 60px;
+				left: 883px;
+			}
+			
+			#top_13_16_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 70px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_13_16_name:hover{
+				color:blue;
+			}
+			
+			#top_13_16_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 110px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_13_17 {
+				position: absolute;
+				top: 140px;
+				left: 883px;
+			}
+			
+			#top_13_17_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 150px;
+				left: 980px;
+				font-size: 12px;
+			}
+			#top_13_17_name:hover{
+				color:blue;
+			}
+			
+			#top_13_17_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 190px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_14 {
+				height: 45px;
+				width: 1200px;
+				position: absolute;
+				top: 520px;
+				left: 0px;
+				border: 1px gainsboro solid;
+			}
+			
+			#top_14_1 {
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				font-size: 18px;
+				color: coral;
+				line-height: 45px;
+			}
+			
+			#top_14_2 {
+				/*background: red;*/
+				height: 45px;
+				width: 300px;
+				position: absolute;
+				left: 920px;
+				top: 0px;
+				text-align: center;
+				line-height: 45px;
+				font-size: 12px;
+			}
+			
+			#top_14_2 a:hover {
+				color: blue;
+			}
+			
+			#top_15 {
+				/*background-color: red;*/
+				height: 500px;
+				width: 1200px;
+				position: absolute;
+				top: 590px;
+				left: 0px;
+			}
+			
+			#top_15_1 {}
+			
+			#top_15_2 {
+				position: absolute;
+				top: 250px;
+				left: 0px;
+			}
+			
+			#top_15_3 {
+				position: absolute;
+				top: 120px;
+				left: 0px;
+			}
+			
+			#top_15_4 {
+				height: 40px;
+				width: 300px;
+				border: 1px gainsboro solid;
+				position: absolute;
+				top: -250px;
+				left: 883px;
+				line-height: 40px;
+				padding-left: 15px;
+			}
+			
+			#top_15_5 {
+				position: absolute;
+				top: -250px;
+				left: 190px;
+			}
+			
+			#top_15_5_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_15_5_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_6 {
+				position: absolute;
+				top: -250px;
+				left: 360px;
+			}
+			
+			#top_15_6_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_15_6_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_7 {
+				position: absolute;
+				top: -250px;
+				left: 530px;
+			}
+			
+			#top_15_7_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_15_7_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_8 {
+				position: absolute;
+				top: -250px;
+				left: 700px;
+			}
+			
+			#top_15_8_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_15_8_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_9 {
+				position: absolute;
+				top: 0px;
+				left: 190px;
+			}
+			
+			#top_15_9_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_15_9_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_10 {
+				position: absolute;
+				top: 0px;
+				left: 360px;
+			}
+			
+			#top_15_10_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_15_10_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_11 {
+				position: absolute;
+				top: 0px;
+				left: 530px;
+			}
+			
+			#top_15_11_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_15_11_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_12 {
+				position: absolute;
+				top: 0px;
+				left: 700px;
+			}
+			
+			#top_15_12_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_15_12_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_13 {
+				position: absolute;
+				top: -180px;
+				left: 883px;
+			}
+			
+			#top_15_13_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -170px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_15_13_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -130px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_14 {
+				position: absolute;
+				top: -100px;
+				left: 883px;
+			}
+			
+			#top_15_14_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -90px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_15_14_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -50px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_15 {
+				position: absolute;
+				top: -20px;
+				left: 883px;
+			}
+			
+			#top_15_15_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -10px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_15_15_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 30px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_16 {
+				position: absolute;
+				top: 60px;
+				left: 883px;
+			}
+			
+			#top_15_16_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 70px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_15_16_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 110px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_15_17 {
+				position: absolute;
+				top: 140px;
+				left: 883px;
+			}
+			
+			#top_15_17_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 150px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_15_17_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 190px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_16 {
+				height: 45px;
+				width: 1200px;
+				position: absolute;
+				top: 520px;
+				left: 0px;
+				border: 1px gainsboro solid;
+			}
+			
+			#top_16_1 {
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				font-size: 18px;
+				color: coral;
+				line-height: 45px;
+			}
+			
+			#top_16_2 {
+				/*background: red;*/
+				height: 45px;
+				width: 350px;
+				position: absolute;
+				left: 850px;
+				top: 0px;
+				text-align: center;
+				line-height: 45px;
+				font-size: 12px;
+			}
+			
+			#top_16_2 a:hover {
+				color: blue;
+			}
+			
+			#top_17 {
+				/*background-color: red;*/
+				height: 500px;
+				width: 1200px;
+				position: absolute;
+				top: 590px;
+				left: 0px;
+			}
+			
+			#top_17_1 {}
+			
+			#top_17_2 {
+				position: absolute;
+				top: 250px;
+				left: 0px;
+			}
+			
+			#top_17_3 {
+				position: absolute;
+				top: 120px;
+				left: 0px;
+			}
+			
+			#top_17_4 {
+				height: 40px;
+				width: 300px;
+				border: 1px gainsboro solid;
+				position: absolute;
+				top: -250px;
+				left: 883px;
+				line-height: 40px;
+				padding-left: 15px;
+			}
+			
+			#top_17_5 {
+				position: absolute;
+				top: -250px;
+				left: 190px;
+			}
+			
+			#top_17_5_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_17_5_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_6 {
+				position: absolute;
+				top: -250px;
+				left: 360px;
+			}
+			
+			#top_17_6_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_17_6_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_7 {
+				position: absolute;
+				top: -250px;
+				left: 530px;
+			}
+			
+			#top_17_7_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_17_7_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_8 {
+				position: absolute;
+				top: -250px;
+				left: 700px;
+			}
+			
+			#top_17_8_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_17_8_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_9 {
+				position: absolute;
+				top: 0px;
+				left: 190px;
+			}
+			
+			#top_17_9_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_17_9_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_10 {
+				position: absolute;
+				top: 0px;
+				left: 360px;
+			}
+			
+			#top_17_10_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_17_10_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_11 {
+				position: absolute;
+				top: 0px;
+				left: 530px;
+			}
+			
+			#top_17_11_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_17_11_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_12 {
+				position: absolute;
+				top: 0px;
+				left: 700px;
+			}
+			
+			#top_17_12_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_17_12_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_13 {
+				position: absolute;
+				top: -180px;
+				left: 883px;
+			}
+			
+			#top_17_13_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -170px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_17_13_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -130px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_14 {
+				position: absolute;
+				top: -100px;
+				left: 883px;
+			}
+			
+			#top_17_14_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -90px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_17_14_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -50px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_15 {
+				position: absolute;
+				top: -20px;
+				left: 883px;
+			}
+			
+			#top_17_15_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -10px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_17_15_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 30px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_16 {
+				position: absolute;
+				top: 60px;
+				left: 883px;
+			}
+			
+			#top_17_16_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 70px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_17_16_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 110px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_17_17 {
+				position: absolute;
+				top: 140px;
+				left: 883px;
+			}
+			
+			#top_17_17_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 150px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_17_17_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 190px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_18 {
+				height: 45px;
+				width: 1200px;
+				position: absolute;
+				top: 520px;
+				left: 0px;
+				border: 1px gainsboro solid;
+			}
+			
+			#top_18_1 {
+				position: absolute;
+				left: 20px;
+				top: 0px;
+				font-size: 18px;
+				color: coral;
+				line-height: 45px;
+			}
+			
+			#top_18_2 {
+				/*background: red;*/
+				height: 45px;
+				width: 350px;
+				position: absolute;
+				left: 850px;
+				top: 0px;
+				text-align: center;
+				line-height: 45px;
+				font-size: 12px;
+			}
+			
+			#top_18_2 a:hover {
+				color: blue;
+			}
+			
+			#top_19 {
+				/*background-color: red;*/
+				height: 500px;
+				width: 1200px;
+				position: absolute;
+				top: 590px;
+				left: 0px;
+			}
+			
+			#top_19_1 {}
+			
+			#top_19_2 {
+				position: absolute;
+				top: 250px;
+				left: 0px;
+			}
+			
+			#top_19_3 {
+				position: absolute;
+				top: 120px;
+				left: 0px;
+			}
+			
+			#top_19_4 {
+				height: 40px;
+				width: 300px;
+				border: 1px gainsboro solid;
+				position: absolute;
+				top: -250px;
+				left: 883px;
+				line-height: 40px;
+				padding-left: 15px;
+			}
+			
+			#top_19_5 {
+				position: absolute;
+				top: -250px;
+				left: 190px;
+			}
+			
+			#top_19_5_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_19_5_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_6 {
+				position: absolute;
+				top: -250px;
+				left: 360px;
+			}
+			
+			#top_19_6_name {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -110px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_19_6_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_7 {
+				position: absolute;
+				top: -250px;
+				left: 530px;
+			}
+			
+			#top_19_7_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_19_7_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_8 {
+				position: absolute;
+				top: -250px;
+				left: 700px;
+			}
+			
+			#top_19_8_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -110px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_19_8_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -50px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_9 {
+				position: absolute;
+				top: 0px;
+				left: 190px;
+			}
+			
+			#top_19_9_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 190px;
+				font-size: 12px;
+			}
+			
+			#top_19_9_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 190px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_10 {
+				position: absolute;
+				top: 0px;
+				left: 360px;
+			}
+			
+			#top_19_10_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 360px;
+				font-size: 12px;
+			}
+			
+			#top_19_10_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 360px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_11 {
+				position: absolute;
+				top: 0px;
+				left: 530px;
+			}
+			
+			#top_19_11_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 530px;
+				font-size: 12px;
+			}
+			
+			#top_19_11_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 530px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_12 {
+				position: absolute;
+				top: 0px;
+				left: 700px;
+			}
+			
+			#top_19_12_name {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 130px;
+				left: 700px;
+				font-size: 12px;
+			}
+			
+			#top_19_12_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 180px;
+				left: 700px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_13 {
+				position: absolute;
+				top: -180px;
+				left: 883px;
+			}
+			
+			#top_19_13_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -170px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_19_13_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: -130px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_14 {
+				position: absolute;
+				top: -100px;
+				left: 883px;
+			}
+			
+			#top_19_14_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -90px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_19_14_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: -50px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_15 {
+				position: absolute;
+				top: -15px;
+				left: 883px;
+			}
+			
+			#top_19_15_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: -10px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_19_15_price {
+				height: 40px;
+				width: 160px;
+				position: absolute;
+				top: 30px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_16 {
+				position: absolute;
+				top: 60px;
+				left: 883px;
+			}
+			
+			#top_19_16_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 70px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_19_16_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 110px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_19_17 {
+				position: absolute;
+				top: 140px;
+				left: 883px;
+			}
+			
+			#top_19_17_name {
+				height: 40px;
+				width: 250px;
+				position: absolute;
+				top: 150px;
+				left: 980px;
+				font-size: 12px;
+			}
+			
+			#top_19_17_price {
+				height: 40px;
+				width: 130px;
+				position: absolute;
+				top: 190px;
+				left: 980px;
+				font-size: 14px;
+				color: orange;
+			}
+			
+			#top_20 {
+				/*background-color: red;*/
+				height: 350px;
+				width: 1200px;
+				position: absolute;
+				top: 500px;
+				left: 0px;
+			}
+			
+			#top_20_1 {
+				/*background-color:orange ;*/
+				height: 40px;
+				width: 1200px;
+				position: absolute;
+				top: 30px;
+				left: -80px;
+				line-height: 40px;
+				text-align: center;
+			}
+			
+			#top_20_1 ol li {
+				list-style-type: none;
+				float: left;
+				height: 80px;
+				width: 230px;
+			}
+			
+			#top_20_2 {
+				/*background: blue;*/
+				height: 160px;
+				width: 80px;
+				position: absolute;
+				top: 70px;
+				left: 0px;
+			}
+			
+			#top_20_2 ol li {
+				/*background: red;*/
+				list-style-type: none;
+				font-size: 12px;
+				padding-top: 10px;
+			}
+			
+			#top_20_3 {
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top: 80px;
+				left: 230px;
+			}
+			
+			#top_20_3 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height: 30px;
+			}
+			
+			#top_20_4 {
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top: 80px;
+				left: 450px;
+			}
+			
+			#top_20_4 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height: 30px;
+			}
+			
+			#top_20_5 {
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top: 80px;
+				left: 690px;
+			}
+			
+			#top_20_5 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height: 30px;
+			}
+			
+			#top_20_6 {
+				/*background: blue;*/
+				height: 270px;
+				width: 150px;
+				position: absolute;
+				top: 80px;
+				left: 910px;
+			}
+			
+			#top_20_6 ol li {
+				list-style-type: none;
+				font-size: 12px;
+				height: 30px;
+			}
+			
+			#bottom {
+				background-color: grey;
+				height: 150px;
+				width: 1370px;
+				position: absolute;
+				top: 850px;
+				left: -100px;
+				font-size: 12px;
+				color: gainsboro;
+			}
+			
+			pre {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				padding-left: 350px;
+				padding-top: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="top_1">
+			<div id="top_1_1">
+				<span>
+					尊敬的顾客您好，欢迎来到ASUS华硕商城！
+					</span>
+			</div>
+			<div id="top_1_2">
+
+				<a href="../login/Shop_login.html">登陆</a>
+				<span style="color:gainsboro;">&nbsp;|&nbsp;</span>
+				<a href="../register/Shop_register.html">注册</a>
+
+			</div>
+			<div id="top_1_3">
+
+				<a href="../vip/会员.html">会员中心</a>&nbsp;
+
+				<a href="#">购物指南</a>
+
+			</div>
+
+		</div>
+
+		<div id="top_2">
+			<div id="top_2_1">
+				<a href="hssc.html">
+					<img src="../../img/2-left.jpg" />
+				</a>
+			</div>
+			<div id="top_2_2">
+				<input style="height:38px;width:400px;color:black" />
+			</div>
+			<div id="top_2_3"><img src="../../img/sousuo.png" /></div>
+			<div id="top_2_4">
+				重要公告：
+				<a href="#" style="color: black;">※8/2前订单＆退换货联系客服</a>
+				<a href="#" style="color:  black;">※旧会员登入流程</a>
+			</div>
+
+		</div>
+
+		<div id="top_3">
+			<div id="top_3_1">
+				<div id="top_3_1_1">所有商品分类</div>
+				<div id="top_3_1_2">
+					<ol>
+						<li>笔记本电脑
+							<div id="top_3_1_2_div1">
+								<ol>
+									<li>
+										<a href="ASUS Store-玩家国度笔记本-ROG系列.html" style="color: black"><b>玩家国度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="ASUS Store-玩家国度笔记本-ROG系列.html">ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>翻转变形系列&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">T/TP系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>灵耀轻薄ZenBook&nbsp;&nbsp;</b></a>
+										<a href="#">U系列 &nbsp;&nbsp;UX系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>商用笔记本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">P/PU系列 &nbsp;&nbsp;B/BU系列 &nbsp;&nbsp;PRO系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>游戏笔记本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">顽石系列-FL系列&nbsp;&nbsp;飞行堡垒-FX/ZX系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>办公娱乐本&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">效能先锋-A/K/X系列&nbsp;&nbsp; 学生助手-E系列&nbsp;&nbsp; 大屏影音-N/V系列</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>整机商品
+							<div id="top_3_1_2_div2">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>一体机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">傲世一体机-ZenAiO系列 &nbsp;&nbsp;Vivo一体机-V系列 &nbsp;&nbsp;如意一体机-ET系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>台式机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">游戏主机-G系列 &nbsp;&nbsp;家用系列-M/K系列 &nbsp;&nbsp;玩家国度-ROG系列&nbsp;&nbsp; 商用系列B/P系列</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>手机/平板/数码
+							<div id="top_3_1_2_div3">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>智能手机&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ZenFone系列 &nbsp;&nbsp;ZenFone飞马系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>平板电脑&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>智能设备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">智能手表</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>DIY外设
+							<div id="top_3_1_2_div4">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>主板&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ROG玩家国度 &nbsp;&nbsp;电竞系列PRO GAMING &nbsp;&nbsp;特种部队TUF&nbsp;&nbsp;大师系列 &nbsp;&nbsp;家用系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>显卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">猛禽系列&nbsp;&nbsp;ROG玩家国度&nbsp;&nbsp;公版系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>声卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">外置声卡</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>显示器&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">主流家用&nbsp;&nbsp;电竞游戏&nbsp;&nbsp;专业设计&nbsp;&nbsp;健康爱眼 &nbsp;&nbsp;时尚轻薄&nbsp;&nbsp;玩家国度ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>光驱/刻录机&nbsp;&nbsp;</b></a>
+										<a href="#">外置纤薄DVD/刻录机&nbsp;&nbsp; 蓝光系列光驱&nbsp;&nbsp;内置DVD/刻录机</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>行车记录仪&nbsp;&nbsp;</b></a>
+										<a href="#">行车记录仪&nbsp;&nbsp;运动摄像机</a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>网络产品
+							<div id="top_3_1_2_div5">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>路由器&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>无线网卡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>办公设备
+							<div id="top_3_1_2_div6">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>投影仪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>MiniPC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+						<li>周边配件
+							<div id="top_3_1_2_div7">
+								<ol>
+									<li>
+										<a href="#" style="color: black"><b>键盘/鼠标&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">键盘 &nbsp;&nbsp;鼠标&nbsp;&nbsp; 键鼠套装&nbsp;&nbsp;鼠标垫 &nbsp;&nbsp;玩家国度ROG系列</a>
+									</li>
+									<li>
+										<a href="#" style="color: black"><b>笔记本配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+										<a href="#">ROG玩家国度系列</a>
+									</li>
+									<li>
+
+										<a href="#" style="color: black"><b>手机配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+									<li>
+
+										<a href="#" style="color: black"><b>平板配件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>
+									</li>
+								</ol>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<a href="ASUS华硕商城_游戏笔记本.html">
+				<div id="top_3_2">游戏本暑促送背包</div>
+			</a>
+			
+			<div id="top_3_3">办公上网本送包鼠</div>
+			<div id="top_3_4">晒单送笔记本3年延保</div>
+			<div id="top_3_5">夜市直降</div>
+			<div id="top_3_6">以旧换新</div>
+			<div id="top_3_7">
+				<div id="top_3_7_1">
+					<a href="../cart/购物车_ASUS华硕商城.html">
+						购物车中有&nbsp;<b>1</b>&nbsp;种商品
+					</a>
+				</div>
+				<div id="top_3_7_2">加载中...</div>
+			</div>
+		</div>
+
+		<div id="top_4">
+			<a href="#"><img src="../../img/02.jpg" /></a>
+		</div>
+		<div id="circle">
+
+			<div id="circle1"><b>1</b></div>
+			<div id="circle2"><b>2</b></div>
+			<div id="circle3"><b>3</b></div>
+			<div id="circle4"><b>4</b></div>
+			<div id="circle5"><b>5</b></div>
+
+		</div>
+
+		<div id="top_5">
+			<a href="#"><img src="../../img/03.jpg" /></a>
+		</div>
+
+		<div id="top_6">
+			<a href="#"><img src="../../img/04.jpg" /></a>
+		</div>
+
+		<div id="top_7">
+			<a href="#"><img src="../../img/05.jpg" /></a>
+		</div>
+
+		<div id="top_8">
+			<a href="#"><img src="../../img/06.jpg" /></a>
+		</div>
+
+		<div id="top_9">
+			<a href="#"><img src="../../img/07.jpg" /></a>
+		</div>
+
+		<div id="top_10">
+			<div id="top_10_1"><b>1F笔记本专区</b></div>
+			<div id="top_10_2">
+
+				<a href="#" style="color:black">灵耀轻薄</a>&nbsp;&nbsp;
+				<a href="#" style="color:black">效能先锋</a>&nbsp;&nbsp;
+				<a href="#" style="color:black">翻转变形</a>&nbsp;&nbsp;
+				<a href="#" style="color:black">商用</a>&nbsp;&nbsp;
+				<a href="#" style="color:black">笔记本配件</a>&nbsp;&nbsp;
+
+			</div>
+		</div>
+
+		<div id="top_11">
+			<div id="top_11_1"><img src="../../img/08.jpg" /></div>
+			<div id="top_11_2"><img src="../../img/13.jpg" </div>
+				<div id="top_11_3"><img src="../../img/14.jpg" /></div>
+				<div id="top_11_4"><span>商用笔记本</span></div>
+				<div id="top_11_5"><img src="../../img/09.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_5_name">V405LB-大屏影音系列（Windows 8.1/i7-</div>
+				<div id="top_11_5_price"><b>销售价：￥5699.00</b></div>
+				<div id="top_11_6"><img src="../../img/10.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_6_name">A751LJ-效能先锋笔记本/Windows 8.1/i3 </div>
+				<div id="top_11_6_price"><b>销售价：￥4099.00</b></div>
+				<div id="top_11_7"><img src="../../img/11.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_7_name">N551JW-华硕大屏影音N系列（Windows 8.1/i7 4720HQ</div>
+				<div id="top_11_7_price"><b>销售价：￥7899.00</b></div>
+				<div id="top_11_8"><img src="../../img/12.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_8_name">A455LF-效能先锋笔记本（i5-5200U/4GB）</div>
+				<div id="top_11_8_price"><b>销售价：￥3999.00</b></div>
+				<div id="top_11_9"><img src="../../img/11_9.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_9_name">X554LP-效能先锋笔记本（Windows 8.1/i3-</div>
+				<div id="top_11_9_price"><b>销售价：￥2999.00</b></div>
+				<div id="top_11_10"><img src="../../img/11_10.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_10_name">A501LB-效能先锋笔记本（Windows 8.1）-藏蓝色</div>
+				<div id="top_11_10_price"><b>销售价：￥5599.00</b></div>
+				<div id="top_11_11"><img src="../../img/11_11.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_11_name">A751LX-效能先锋笔记本（Windows8.1/i7-</div>
+				<div id="top_11_11_price"><b>销售价：￥6499.00</b></div>
+				<div id="top_11_12"><img src="../../img/11_12.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_11_12_name">VM590ZE-华硕大屏影音笔记本（Windows </div>
+				<div id="top_11_12_price"><b>销售价：￥3399.00</b></div>
+				<div id="top_11_13"><img src="../../img/11_13.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_11_13_name">P302UV-轻薄商用笔记本/Windows 1 </div>
+				<div id="top_11_13_price"><b>销售价：￥5599.00</b></div>
+				<div id="top_11_14"><img src="../../img/11_14.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_11_14_name">P302UV-轻薄商用笔记本/Windows 1 </div>
+				<div id="top_11_14_price"><b>销售价：￥4799.00</b></div>
+				<div id="top_11_15"><img src="../../img/11_15.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_11_15_name">P302UV-轻薄商用笔记本/Windows 1 </div>
+				<div id="top_11_15_price"><b>销售价：￥4299.00</b></div>
+				<div id="top_11_16"><img src="../../img/11_16.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_11_16_name">PRO453UJ/PRO553UJ-主流商用笔记</div>
+				<div id="top_11_16_price"><b>销售价：￥4999.00</b></div>
+				<div id="top_11_17"><img src="../../img/11_17.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_11_17_name">PRO453UJ/PRO553UJ-主流商用笔记</div>
+				<div id="top_11_17_price"><b>销售价：￥5599.00</b></div>
+			</div>
+			<div id="top_12">
+				<div id="top_12_1"><b>2F游戏本专区</b></div>
+				<div id="top_12_2">
+					<a href="#" style="color: black">飞行堡垒</a>&nbsp;&nbsp;
+					<a href="#" style="color: black">玩家国度</a>&nbsp;&nbsp;
+					<a href="#" style="color: black">ROG配件</a>&nbsp;&nbsp;
+				</div>
+			</div>
+			<div id="top_13">
+
+				<div id="top_13_1"><img src="../../img/13_1.jpg" /></div>
+				<div id="top_13_2"><img src="../../img/13_2.jpg" </div>
+					<div id="top_13_3"><img src="../../img/13_3.jpg" /></div>
+					<div id="top_13_4"><span>玩家指定主机</span></div>
+					<div id="top_13_5"><img src="../../img/13_5.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_5_name">FX50JK-飞行堡垒游戏笔记本（ Windows 8.1 /i7 4710HQ</div>
+					<div id="top_13_5_price"><b>销售价：￥5699.00</b></div>
+					<div id="top_13_6"><img src="../../img/13_6.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_6_name">FX-PLUS-飞行堡垒游戏笔记本（Windows 8.1/i5</div>
+					<div id="top_13_6_price"><b>销售价：￥5299.00</b></div>
+					<div id="top_13_7"><img src="../../img/13_7.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_7_name">FX50VX-飞行堡垒游戏本（ Windows 10 Home/ i7-</div>
+					<div id="top_13_7_price"><b>销售价：￥6499.00</b></div>
+					<div id="top_13_8"><img src="../../img/13_8.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_8_name">FX50VX-飞行堡垒游戏本（ Windows 10 Home/ i5-</div>
+					<div id="top_13_8_price"><b>销售价：￥5099.00</b></div>
+					<div id="top_13_9"><img src="../../img/13_9.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_9_name">GFX71JY-玩家国度系列笔记本/Windows 8.1-黑色</div>
+					<div id="top_13_9_price"><b>销售价：￥19999.00</b></div>
+					<div id="top_13_10"><img src="../../img/13_10.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_10_name">S5VT-玩家国度笔记本（Windows 10 Home/15.6</div>
+					<div id="top_13_10_price"><b>销售价：￥10999.00</b></div>
+					<div id="top_13_11"><img src="../../img/13_11.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_11_name">G60VW-玩家国度笔记本（ Windows 10 Home/ i7-</div>
+					<div id="top_13_11_price"><b>销售价：￥13999.00</b></div>
+					<div id="top_13_12"><img src="../../img/13_12.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_13_12_name">GFX72VL-玩家国度笔记本（Windows 10 Home/i7 </div>
+					<div id="top_13_12_price"><b>销售价：￥13999.00</b></div>
+					<div id="top_13_13"><img src="../../img/13_13.png" ; width="80px" ;height="70px" /></div>
+					<div id="top_13_13_name">华硕玩家国度ROG G30AK-I471BM1</div>
+					<div id="top_13_13_price"><b>销售价：￥9299.00</b></div>
+					<div id="top_13_14"><img src="../../img/13_14.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_13_14_name">华硕玩家国度ROG G20CB-I67BAM1</div>
+					<div id="top_13_14_price"><b>销售价：￥14999.00</b></div>
+					<div id="top_13_15"><img src="../../img/13_15.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_13_15_name">玩家国度ROG G20CB-I67BBM1游戏</div>
+					<div id="top_13_15_price"><b>销售价：￥19999.00</b></div>
+					<div id="top_13_16"><img src="../../img/13_16.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_13_16_name">华硕飞行堡垒游戏台式机G11CD/I767</div>
+					<div id="top_13_16_price"><b>销售价：￥6499.00</b></div>
+					<div id="top_13_17"><img src="../../img/13_17.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_13_17_name">华硕飞行堡垒游戏主机 G11CD-I67E8</div>
+					<div id="top_13_17_price"><b>销售价：￥8999.00</b></div>
+				</div>
+
+	</body>
+	<div id="top_14">
+		<div id="top_14_1"><b>3F数码智能专区</b></div>
+		<div id="top_14_2">
+
+			<a href="#" style="color: black">手机配件</a>&nbsp;&nbsp;
+			<a href="#" style="color: black">平板配件</a>&nbsp;&nbsp;
+			<a href="#" style="color: black">ZenWatch2手表</a>&nbsp;&nbsp;
+
+		</div>
+	</div>
+	<div id="top_15">
+		<div id="top_15_1"><img src="../../img/15_1.jpg" /></div>
+		<div id="top_15_2"><img src="../../img/15_2.jpg" </div>
+			<div id="top_15_3"><img src="../../img/15_3.jpg" /></div>
+			<div id="top_15_4"><span>人气销售榜</span></div>
+			<div id="top_15_5"><img src="../../img/15_5.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_5_name">华硕ZenFone电神5000（1.0GHz/2GB/32GB）</div>
+			<div id="top_15_5_price"><b>抢购价：￥899.00</b></div>
+			<div id="top_15_6"><img src="../../img/15_6.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_6_name">[ZenPad 8.0]Z580CA平板电脑</div>
+			<div id="top_15_6_price"><b>抢购价：￥1899.00</b></div>
+			<div id="top_15_7"><img src="../../img/15_7.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_7_name">华硕ZenFone Selfie神拍机标准版ZD551KL</div>
+			<div id="top_15_7_price"><b>抢购价：￥1699.00</b></div>
+			<div id="top_15_8"><img src="../../img/15_8.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_8_name">华硕Zenfone飞马3智能手机</div>
+			<div id="top_15_8_price"><b>抢购价：￥1299.00</b></div>
+			<div id="top_15_9"><img src="../../img/15_9.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_9_name">[ZenPad C 7.0]Z170MG平板电脑</div>
+			<div id="top_15_9_price"><b>抢购价：￥699.00</b></div>
+			<div id="top_15_10"><img src="../../img/15_10.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_10_name">华硕ZenFone 2智能手机高配版ZE551ML</div>
+			<div id="top_15_10_price"><b>抢购价：￥1799.00</b></div>
+			<div id="top_15_11"><img src="../../img/15_11.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_11_name">[ZenPad 8.0]Z380KL平板电脑</div>
+			<div id="top_15_11_price"><b>抢购价：￥1499.00</b></div>
+			<div id="top_15_12"><img src="../../img/15_12.jpg" ; width="130px" ;height="125px" /></div>
+			<div id="top_15_12_name">华硕飞马5000智能手机</div>
+			<div id="top_15_12_price"><b>抢购价：￥1799.00</b></div>
+			<div id="top_15_13"><img src="../../img/15_13.jpg" ; width="80px" ;height="70px" /></div>
+			<div id="top_15_13_name">[ZenPad 10]Z300CG平板电脑</div>
+			<div id="top_15_13_price"><b>抢购价：￥1599.00</b></div>
+			<div id="top_15_14"><img src="../../img/15_14.jpg" ; width="80px" ;height="70px" /></div>
+			<div id="top_15_14_name">[ZenPad 8.0]Z580CA平板电脑</div>
+			<div id="top_15_14_price"><b>抢购价：￥1899.00</b></div>
+			<div id="top_15_15"><img src="../../img/15_15.jpg" ; width="80px" ;height="70px" /></div>
+			<div id="top_15_15_name">[ZenPad 10]Z300C平板电脑</div>
+			<div id="top_15_15_price"><b>抢购价：￥1299.00</b></div>
+			<div id="top_15_16"><img src="../../img/15_16.jpg" ; width="80px" ;height="70px" /></div>
+			<div id="top_15_16_name">华硕ZenWatch2（WI501Q）智能手表</div>
+			<div id="top_15_16_price"><b>抢购价：￥1999.00</b></div>
+			<div id="top_15_17"><img src="../../img/15_17.jpg" ; width="80px" ;height="70px" /></div>
+			<div id="top_15_17_name">[ZenPad 8.0]Z380KL平板电脑</div>
+			<div id="top_15_17_price"><b>抢购价：￥1499.00</b></div>
+		</div>
+		<div id="top_16">
+			<div id="top_16_1"><b>4F台式/一体机/显示器</b></div>
+			<div id="top_16_2">
+
+				<a href="#" style="color: black">ZenAIO傲世一体机</a>&nbsp;&nbsp;
+				<a href="#" style="color: black">如意一体机</a>&nbsp;&nbsp;
+				<a href="#" style="color: black">家用台式机</a>&nbsp;&nbsp;
+				<a href="#" style="color: black">ROG显示器</a>&nbsp;&nbsp;
+
+			</div>
+		</div>
+		<div id="top_17">
+			<div id="top_17_1"><img src="../../img/17_1.jpg" /></div>
+			<div id="top_17_2"><img src="../../img/17_2.jpg" </div>
+				<div id="top_17_3"><img src="../../img/17_3.jpg" /></div>
+				<div id="top_17_4"><span>热销显示器</span></div>
+				<div id="top_17_5"><img src="../../img/17_5.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_5_name">华硕碉堡台式机K30BF-A1014M2（Windows 8.1</div>
+				<div id="top_17_5_price"><b>抢购价：￥2899.00</b></div>
+				<div id="top_17_6"><img src="../../img/17_6.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_6_name">华硕简约时尚台式机K20CE-N3054A1（ Celeron™</div>
+				<div id="top_17_6_price"><b>抢购价：￥2499.00</b></div>
+				<div id="top_17_7"><img src="../../img/17_7.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_7_name">华硕幸福+影音台式机M32AD-I4154M6（i3-</div>
+				<div id="top_17_7_price"><b>抢购价：￥3299.00</b></div>
+				<div id="top_17_8"><img src="../../img/17_8.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_8_name">华硕影音台式机M32CD-I6114A1（i3-6100/</div>
+				<div id="top_17_8_price"><b>抢购价：￥2799.00</b></div>
+				<div id="top_17_9"><img src="../../img/17_9.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_9_name">华硕如意一体机ET2032INK-WC001R/ J2900 / GT</div>
+				<div id="top_17_9_price"><b>抢购价：￥2899.00</b></div>
+				<div id="top_17_10"><img src="../../img/17_10.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_10_name">华硕如意一体机ET2040IUK-BB004R/无线键鼠-黑色</div>
+				<div id="top_17_10_price"><b>抢购价：￥2499.00</b></div>
+				<div id="top_17_11"><img src="../../img/17_11.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_11_name">华硕一体机ET2230AGK（A4-6210/2G</div>
+				<div id="top_17_11_price"><b>抢购价：￥3799.00</b></div>
+				<div id="top_17_12"><img src="../../img/17_12.jpg" ; width="130px" ;height="125px" /></div>
+				<div id="top_17_12_name">华硕一体机ET2325IUK-BC005R（J2900/UMA/4GB/</div>
+				<div id="top_17_12_price"><b>抢购价：￥3799.00</b></div>
+				<div id="top_17_13"><img src="../../img/17_13.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_17_13_name">华硕VA322N-W 31.5英寸高清滤蓝光</div>
+				<div id="top_17_13_price"><b>抢购价：￥1199.00</b></div>
+				<div id="top_17_14"><img src="../../img/17_14.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_17_14_name">华硕显示器PG27AQ 27英寸4K分辨率</div>
+				<div id="top_17_14_price"><b>抢购价：￥6599.00</b></div>
+				<div id="top_17_15"><img src="../../img/17_15.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_17_15_name">华硕显示器VC209D 19.5英寸滤蓝光</div>
+				<div id="top_17_15_price"><b>抢购价：￥599.00</b></div>
+				<div id="top_17_16"><img src="../../img/17_16.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_17_16_name">华硕主流家用显示器VN248NA 23.8</div>
+				<div id="top_17_16_price"><b>抢购价：￥899.00</b></div>
+				<div id="top_17_17"><img src="../../img/17_17.jpg" ; width="80px" ;height="70px" /></div>
+				<div id="top_17_17_name">华硕主流家用显示器VS239HR178度</div>
+				<div id="top_17_17_price"><b>抢购价：￥799.00</b></div>
+			</div>
+			<div id="top_18">
+				<div id="top_18_1"><b>5F 电脑配件/外设产品</b></div>
+				<div id="top_18_2">
+
+					<a href="#" style="color: black">大师系列主版 </a>&nbsp;&nbsp;
+					<a href="#" style="color: black">电竞系列主版</a>&nbsp;&nbsp;
+					<a href="#" style="color: black">热销显卡</a>&nbsp;&nbsp;
+					<a href="#" style="color: black">键鼠套装</a>&nbsp;&nbsp;
+
+				</div>
+			</div>
+			<div id="top_19">
+				<div id="top_19_1"><img src="../../img/19_1.jpg" /></div>
+				<div id="top_19_2"><img src="../../img/19_2.jpg" </div>
+					<div id="top_19_3"><img src="../../img/19_3.jpg" /></div>
+					<div id="top_19_4"><span>DIY产品</span></div>
+					<div id="top_19_5"><img src="../../img/19_5.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_5_name">STRIX-GTX980TI-DC3-6GD5-GAMING</div>
+					<div id="top_19_5_price"><b>销售价：￥4799.00</b></div>
+					<div id="top_19_6"><img src="../../img/19_6.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_6_name">GTX1080-8G</div>
+					<div id="top_19_6_price"><b>销售价：￥5399.00</b></div>
+					<div id="top_19_7"><img src="../../img/19_7.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_7_name">GTX1080-8G</div>
+					<div id="top_19_7_price"><b>销售价：￥1799.00</b></div>
+					<div id="top_19_8"><img src="../../img/19_8.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_8_name">STRIX-R9370 1024SP-OC-4GD5-GAMING</div>
+					<div id="top_19_8_price"><b>销售价：￥1399.00</b></div>
+					<div id="top_19_9"><img src="../../img/19_9.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_9_name">GTX950-DC2OC-2GD5</div>
+					<div id="top_19_9_price"><b>销售价：￥1299.00</b></div>
+					<div id="top_19_10"><img src="../../img/19_10.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_10_name">GTX960-DC2OC-4GD5</div>
+					<div id="top_19_10_price"><b>销售价：￥1699.00</b></div>
+					<div id="top_19_11"><img src="../../img/19_11.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_11_name">GTX970-DC2OC-4GD5</div>
+					<div id="top_19_11_price"><b>销售价：￥2599.00</b></div>
+					<div id="top_19_12"><img src="../../img/19_12.jpg" ; width="130px" ;height="125px" /></div>
+					<div id="top_19_12_name">华硕（ASUS）MATRIX-GTX980-P-4GD5显卡</div>
+					<div id="top_19_12_price"><b>销售价：￥5999.00</b></div>
+					<div id="top_19_13"><img src="../../img/19_13.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_19_13_name">华硕SDRW-08U5S-U外置刻录机</div>
+					<div id="top_19_13_price"><b>销售价：￥299.00</b></div>
+					<div id="top_19_14"><img src="../../img/19_14.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_19_14_name">华硕USB-AC55无线网卡 （带USB3.0</div>
+					<div id="top_19_14_price"><b>销售价：￥299.00</b></div>
+					<div id="top_19_15"><img src="../../img/19_15.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_19_15_name">华硕SDRW-08D2S-U黑白两色时尚纤</div>
+					<div id="top_19_15_price"><b>销售价：￥2199.00</b></div>
+					<div id="top_19_16"><img src="../../img/19_16.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_19_16_name">华硕投影机P3B LED微型短焦家用办公</div>
+					<div id="top_19_16_price"><b>销售价：￥4399.00</b></div>
+					<div id="top_19_17"><img src="../../img/19_17.jpg" ; width="80px" ;height="70px" /></div>
+					<div id="top_19_17_name">华硕猛禽电竞机械键盘STRIX TACTIC</div>
+					<div id="top_19_17_price"><b>销售价：￥949.00</b></div>
+				</div>
+				<div id="top_20">
+					<div id="top_20_1">
+						<ol>
+							<li><b>公司介绍</b></li>
+							<li><b>购物指南</b></li>
+							<li><b>配送与付款</b></li>
+							<li><b>售后服务</b></li>
+							<li><b>服务与支持</b></li>
+						</ol>
+					</div>
+					<div id="top_20_2">
+						<ol>
+							<li>
+								<a href="#" style="text-decoration:none; color:orange">关于华硕 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration:none; color:orange">华硕承诺</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration:none; color:orange">交易条款</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration:none; color:orange">特别提醒</a>
+							</li>
+
+						</ol>
+					</div>
+
+					<div id="top_20_3">
+						<ol>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">订单说明 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">会员注册</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">会员账户安全与信息</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">购物流程</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">积分使用说明 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">优惠券使用说明</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">常见问题</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">华硕商城服务协议说明</a>
+							</li>
+						</ol>
+					</div>
+
+					<div id="top_20_4">
+						<ol>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">发货与签收规范 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">配送运费说明</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">配送常见问题</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">配送异常</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">付款咨询 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">发票说明</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">发票常见问题</a>
+							</li>
+						</ol>
+					</div>
+
+					<div id="top_20_5">
+						<ol>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;"> 退换货申请 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">维修申请</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">售后产品返回和退款说明</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">增值服务</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">如何找到产品序列号 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">联系我们</a>
+							</li>
+
+						</ol>
+					</div>
+
+					<div id="top_20_6">
+						<ol>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">华硕服务中心查询 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">华硕授权实体门店查询</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">华硕体验店</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">ZenCare</a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;">ZenTalk硕粉俱乐部 </a>
+							</li>
+							<li>
+								<a href="#" style="text-decoration: none; color: orange;;">Giftbox</a>
+							</li>
+
+						</ol>
+					</div>
+				</div>
+
+				<div id="bottom">
+					<pre>
+				本商店顾客个人信息将不会被泄漏给其他任何机构和个人
+                                 本商店logo和图片都已经申请保护，未经授权不得使用
+              有任何购物问题请联系商城客服 | 电话：400-091-9520 | 工作时间：周一~周日 9:00－18:00
+                      沪ICP备11025349号-3 │ ASUSTeK Computer Inc. All rights reserved.
+			</pre>
+
+				</div>
+
+</html>

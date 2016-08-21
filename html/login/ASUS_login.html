@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>华硕账户登录</title>
+		<link rel="shortcut icon" type="image/x-icon" href="title1.png" >
+		<!--link定义文档与外部文件之间的关系，网站图标-->
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				font-family: "微软雅黑";
+			}
+			body{/*页面整体*/
+				background-color: rgb(243,243,243);
+				/*页面的整体颜色*/
+			}
+			#top_head{        /*头部大小样式*/ 
+				/*border: solid 1px lawngreen;*/
+				width: 100%;
+				height: 75px;
+			}
+			#top_head_ASUS{    /*ASUA图片位置大小*/
+				/*border: solid 1px black;*/
+				width: 115px;
+				height: 30px;
+				position: absolute;
+				left: 135px;
+				top: 20px;
+				background-image: url(../../img/ASUS.png);
+				background-size: 115px 30px;
+			}
+			#top_head_language{/*设置整体语言的位置大小*/
+				/*border: solid 1px black;*/
+				width: 125px;
+				height: 25px;
+				position: absolute;
+				top: 20px;
+				right: 155px;
+				background-image: url(../../img/language.png) ;/*语言部分的图片*/
+				background-repeat: no-repeat;/*取消重复平铺*/
+				
+			}
+			#top_head_language_other select{/*语言下拉列表*/
+				position:absolute;
+				left: 30px;
+				height: 25px;
+				line-height: 25px;
+				background-color:rgb(243,243,243) ;
+				border: none;  /*取消边框*/
+				
+			}
+			/*span{
+				position:absolute ;
+				left: 40px;
+				height: 25px;
+				line-height: 25px;
+				font-size: 13px;
+			}*/
+			#center_body{  /*设置主体部分大小*/
+				/*border: solid 1px black;*/
+				width: 1085px;
+				height: 800px;
+				position: relative;
+				left: 135px;
+				background-color: white;
+			}
+			#center_body_right{  /*设置中间分隔线*/
+				height: 90%;
+				width: 1px;
+				background-color: rgb(229,229,229);
+				position: absolute;
+				top: 50px;
+				left: 543px;
+			}
+			
+			#center_body_left_picture{/*图片*/
+				/*border: solid 1px black;*/
+				width: 400px;
+				height: 260px;
+				position: absolute;
+				top: 70px;
+				left: 70px;
+				background-image: url(../../img/body1.png);
+				/*line-height: 220px;*/
+				background-repeat: no-repeat;	
+			}
+			#center_body_left_picture span{/*图片下的文字*/
+				position: absolute;
+				top: 240px;
+				font-size: 18px;
+				/*font-family: sans-serif;*/
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+				/*margin-top: 22px;
+				margin-bottom: 10px*/
+			}
+			#center_body_left_register a{/*注册文字*/
+				color:#00A8FF ;
+				position: absolute;
+				left: 70px;
+				top: 370px;
+				font-size: 18px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;/*不懂,复制过来的*/
+				text-decoration: none;
+			}
+			#center_body_left_register a:hover{
+				color: rgb(0,103,207);
+			}
+			#center_body_left_description p{
+				/*border: solid 1px black;*/
+				position: absolute;
+				top: 420px;
+				left: 70px;
+				font-size: 12px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;/*等宽字体*/	
+			}
+			#center_body_left_pic1{
+				/*border: solid 1px black;*/
+				height: 40px;
+				width: 400px;
+				position: absolute;
+				left: 70px;
+				top: 500px;
+				background-image: url(../../img/enter1.png);
+				background-repeat: no-repeat;	
+			}
+			#center_body_left_pic1_des{
+			/*	border: solid 1px blue;*/
+				position: absolute;
+				top: 8px;
+				left: 70px;
+				height: 40px;
+			}
+			#center_body_left_picture1 h3{
+				font-family: sans-serif;
+			}
+			#center_body_left_picture1 p{
+				font-size:12px ;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#center_body_left_pic2{
+				/*border: solid 1px black;*/
+				height: 50px;
+				width: 400px;
+				position: absolute;
+				left: 70px;
+				top: 580px;
+				background-image: url(../../img/enter2.png);
+				background-repeat: no-repeat;	
+			}		
+			#center_body_left_pic3{
+				/*border: solid 1px black;*/
+				height: 60px;
+				width: 400px;
+				position: absolute;
+				left: 65px;
+				top: 660px;
+				background-image: url(../../img/enter3.png);
+				background-repeat: no-repeat;	
+			}
+			#center_body_right_text{/*账户登录*/
+				/*border: solid 1px black;*/
+				font-size:32px ;
+				height: 50px;
+				width: 200px;
+				position: absolute;
+				top:30px;
+				left: 90px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+				}
+			#center_body_right_input{/*提示区*/
+				/*border: solid 1px black;*/
+				position: absolute;
+				left: 90px;
+				height: 30px;
+				width: 400px;
+				top: 90px;
+				font-size:16px;
+				color: #555;
+				font-family: '微软雅黑','新細明體','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#center_body_right_in{
+				position: absolute;
+				top: 130px;
+				left: 90px;
+			}
+			#center_body_right_enter{
+				border: solid 1px rgb(0,168,255);
+				
+				position: absolute;
+				top: 250px;
+				left: 90px;
+				width: 342px; 
+				height: 35px;
+				background-color:rgb(0,168,255) ;
+				color: white;
+				line-height: 35px;
+				text-align: center;
+			}
+			#center_body_right_enter:hover{
+				background-color: rgb(0,143,217);
+			}
+			#center_body_right_remember{
+				/*border: solid 1px black;*/
+				width: 70px;
+				height: 20px;
+				line-height: 20px;
+				position: absolute;
+				top: 300px;
+				left: 90px;
+				font-size: 14px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#center_body_right_forget{
+				/*border: solid 1px black;*/
+				width: 300px;
+				height: 30px;
+				position: absolute;
+				top: 330px;
+				left: 90px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+				font-size: 14px;
+				color: #00A8FF;
+			}
+			#center_body_right_forget span:hover{
+				color: rgb(0,103,207);
+			}
+			#line{/*分隔线*/
+				background-color: rgb(229,229,229);
+				height: 1px;
+				width: 350px;
+				position: absolute;
+				left: 90px;
+				top: 370px;
+			}
+			#center_body_right_other{
+				/*border: solid 1px black;*/
+				width: 350px;
+				height: 30px;
+				position: absolute;
+				left: 90px;
+				top: 400px;
+				font-size: 12px;
+				color: #555;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#web_picture{
+				/*border: solid 1px black;*/
+				width: 60px;
+				height: 60px;
+				background-image: url(../../img/web.png);
+				position: absolute;
+				left: 90px;
+				top: 450px;
+				background-repeat: no-repeat;
+			}
+			#QQ_picture{
+				/*border: solid 1px black;*/
+				width: 60px;
+				height: 60px;
+				background-image: url(../../img/QQ.png);
+				position: absolute;
+				left: 250px;
+				top: 450px;
+				background-repeat: no-repeat;
+			}
+			#center_body_right_email{
+				/*border: solid 1px black;*/
+				width: 350px;
+				height: 30px;
+				position: absolute;
+				left: 90px;
+				top: 540px;
+				font-size: 13px;
+				color: #555;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;
+			}
+			#center_body_right_register a{/*注册文字*/
+				/*border:  solid 1px black;*/
+				width: 100px;
+				height: 30px;
+				color:#00A8FF ;
+				position: absolute;
+				top: 600px;
+				left: 90px;
+				font-size: 18px;
+				font-family: '微软雅黑','Arial Unicode MS', Arial, Helvetica, sans-serif !important;/*不懂,复制过来的*/
+				text-decoration: none;
+			}
+			#center_body_right_register a:hover{
+				color: rgb(0,103,207);
+			}
+			#under_foot{
+				margin: 40px;
+				color: #7C7C7C;
+				margin-left: 400px;
+				font-size: 12px;
+			}
+			#under_foot span:hover{
+				color: black;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="top_head"><!--登陆页面的头部-->
+			<a href="../../index.html">
+				<div id="top_head_ASUS"></div><!--头部左侧华硕图片-->
+			</a>
+			<div id="top_head_language"><!--头部右侧语言选择-->
+				<!--<span>简体中文</span>-->
+				<div id="top_head_language_other"><!--语言下拉列表-->
+				<select name="language" >
+					<option value="1" selected>简体中文</option>
+					<option value="2">繁體中文</option>
+					<option value="3">English</option>
+					<option value="4">한국어</option>
+					<option value="5">Русский-Украина</option>
+					<option value="6">العربية</option>
+					<option value="7">Deutsch</option>
+					<option value="8">Français</option>
+					<option value="9">Українська</option>
+					<option value="10">Русский</option>
+					<option value="11">עברית</option>
+					<option value="12">ไทย</option>
+				</select>
+				</div>
+			</div>
+		</div>
+			
+			
+		<div id="center_body"><!--中间主体-->
+			<div id="center_body_left"><!--中间主体左侧-->
+				<div id="center_body_left_picture">
+					<span>成为一名华硕会员</span>
+				</div>
+				
+				<div id="center_body_left_register"><!--注册会员-->
+					<!--放置链接-->
+					<a href="../register/ASUS_register.html" >马上注册 <b> > </b></a>
+				</div>
+				<div id="center_body_left_description">
+					<p>
+						除了华硕会间歇性提供热门的折扣、促销新闻，以及关于华硕的信息外，<br />
+						您还可以获得出色的技术支持服务以促进您作为我们的产品用户的<br />
+						体验
+					</p>
+				</div>
+				
+				<div id="center_body_left_picture1">
+				<div id="center_body_left_pic1">
+					<div id="center_body_left_pic1_des">
+						<h3>个性化的服务</h3>
+						<p>享受完整的个性化信息中心、售后服务，以及客服</p>
+					</div>
+				</div>
+				
+				<div id="center_body_left_pic2">
+					<div id="center_body_left_pic1_des">
+						<h3>WebStorage</h3>
+						<p>5GB免费云空间</p>
+					</div>
+				</div>
+				
+				<div id="center_body_left_pic3">
+					<div id="center_body_left_pic1_des">
+						<h3>华硕增值服务</h3>
+						<p>华硕增值服务，在自带服务之外，为您购买的产品提供额外的贴心服务，让您的使用更加便捷，更有保障</p>
+					</div>
+				</div>
+				
+				</div>
+				
+			</div>
+			
+			<div id="center_body_right"><!--中间主体右侧-->
+				<span id="center_body_right_text">华硕帐户登录</span>
+				<div id="center_body_right_input">您可以直接输入您的华硕会员帐号和密码登录。</div>
+				<div id="center_body_right_in"><!--密码和账号-->
+					<input id="a" type="text" name="aa" placeholder="   电子邮箱地址" style="width: 340px; height: 35px;"/><br /><br />
+					<input  id="center_body_right_pwd" type="password" name="pwd" min="8" placeholder="   密码"
+						style="width: 340px; height: 35px;" />
+				</div>
+				<!--登录住页面-->
+				<a href="../../index.html">
+				<div id="center_body_right_enter">  <!--登录链接主页-->
+					<!--链接-->
+					登录
+				</div>
+				</a>
+				<div id="center_body_right_remember"><!--是否记住密码-->
+				<input  type="checkbox" name="check" />
+				<span>记住我</span>
+				</div>
+				<div id="center_body_right_forget"><!--忘记密码？重新发送帐户验证邮箱地址-->
+					<span>忘记密码？</span>
+					<span> 重新发送帐户验证邮箱地址</span>
+				</div>
+				<div id="line"></div><!--分隔线-->
+				<div id="center_body_right_other"><!--其他登录方式-->
+					您可以使用以下帐户和密码作为华硕会员直接登录。
+				</div>
+				<div id="QQ_picture"></div><!--QQ登录-->
+				<div id="web_picture"></div><!--web登录-->
+				<div id="center_body_right_email">
+					仍然没有华硕帐号？在这里填写您的邮箱地址注册华硕会员帐号。
+				</div>
+				<div id="center_body_right_register"><!--注册会员-->
+					<!--放置链接-->
+					<a href="../register/ASUS_register.html"  >马上注册 <b> > </b></a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="under_foot"><!--尾部声明-->	
+   			<span>隐私权保护政策</span>
+   			<span>使用条款</span>
+    		<span>沪ICP备11025349号-3 </span>
+    			©ASUSTeK Computer Inc. All rights reserved.
+		</div>
+		
+	</body>
+</html>
